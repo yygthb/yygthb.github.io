@@ -1,0 +1,25 @@
+.content__product {
+  display: flex;
+}
+
+.content__product_img {
+  /* width: 1000px; */
+  position: relative;
+  flex: 5;
+}
+.content__product_composition {
+  flex: 1;
+  padding: 20px;
+}
+.content__product_composition li {
+  list-style-type: none;
+  /* border: 1px solid black; */
+  display: grid;
+  align-content: center;
+}
+.content__product_composition li a {
+  /* height: 100%; */
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.8em;
+}

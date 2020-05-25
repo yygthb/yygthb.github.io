@@ -1,0 +1,25 @@
+html {
+  font-size: 1.2em;
+}
+body {
+  font-family: "Arial";
+  line-height: 1.25;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3em;
+}
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+.conteiner ul {
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+.conteiner li {
+  margin-left: 20px;
+  font-size: 0.85em;
+}
