@@ -6,11 +6,11 @@
 
 /* MOBILE */
 .mobile {
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 .mobile ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 .mobile ul a {
   height: 90px;
