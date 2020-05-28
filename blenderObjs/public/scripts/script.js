@@ -13,6 +13,18 @@ import { MtlObjBridge } from "https://threejsfundamentals.org/threejs/resources/
 let loadingManager = null;
 
 function main() {
+  
+  {
+    const isMobile = /Mobile|webOS|BlackBerry|IEMobile|MeeGo|mini|Fennec|Windows Phone|Android|iP(ad|od|hone)/i.test(
+      navigator.userAgent
+    );
+    if (isMobile) {
+      document.getElementsByClassName("content__product")[0].classList.add("mobile");
+    } else {
+      document.getElementsByClassName("content__product")[0].classList.add("desktop");
+    }
+  }
+  
   let objects = [];
   let emissive = 0x008000;
 
@@ -95,9 +107,7 @@ function main() {
       div[0].insertAdjacentHTML(
         "afterbegin",
         `
-        <li>
           <a href="#"  id="${object.name}" class="blenderObj">XXXXXXXX</a>
-        </li>
       `
       );
     });
