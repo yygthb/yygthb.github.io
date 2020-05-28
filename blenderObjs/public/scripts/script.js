@@ -116,8 +116,11 @@ function main() {
     function onDocumentMouseEvent(event) {
       event.preventDefault();
       if (event.type == "touchstart") {
-        mouse.x = (event.touches[0].clientX / renderer.domElement.width) * 2 - 1;
-        mouse.y = -(event.touches[0].clientY / renderer.domElement.height) * 2 + 1;
+        // mouse.x = (event.touches[0].clientX / renderer.domElement.width) * 2 - 1;
+        // mouse.y = -(event.touches[0].clientY / renderer.domElement.height) * 2 + 1;
+        const pixelRatio = window.devicePixelRatio;
+        const mouseX = (event.touches[0].clientX / renderer.domElement.width) * 2 * pixelRatio - 1;
+        const mouseY = -(event.touches[0].clientY / renderer.domElement.height) * 2 * pixelRatio + 1;
       } else {
         mouse.x = (event.clientX / renderer.domElement.width) * 2 - 1;
         mouse.y = -(event.clientY / renderer.domElement.height) * 2 + 1;
