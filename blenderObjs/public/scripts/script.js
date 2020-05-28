@@ -121,6 +121,8 @@ function main() {
         const pixelRatio = window.devicePixelRatio;
         const mouseX = (event.touches[0].clientX / renderer.domElement.width) * 2 * pixelRatio - 1;
         const mouseY = -(event.touches[0].clientY / renderer.domElement.height) * 2 * pixelRatio + 1;
+        mouse.x = mouseX;
+        mouse.y = mouseY;
       } else {
         mouse.x = (event.clientX / renderer.domElement.width) * 2 - 1;
         mouse.y = -(event.clientY / renderer.domElement.height) * 2 + 1;
