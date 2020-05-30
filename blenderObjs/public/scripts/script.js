@@ -252,26 +252,36 @@ function main() {
 
   // console.log("objects: ", objects);
 
-  // function resizeRendererToDisplaySize(renderer) {
-  //   const canvas = renderer.domElement;
-  //   const width = canvas.clientWidth;
-  //   const height = canvas.clientHeight;
-  //   const needResize = canvas.width !== width || canvas.height !== height;
-  //   if (needResize) {
-  //     renderer.setSize(width, height, false);
-  //   }
-  //   return needResize;
-  // }
+  const isMobile = /Mobile|webOS|BlackBerry|IEMobile|MeeGo|mini|Fennec|Windows Phone|Android|iP(ad|od|hone)/i.test(
+    navigator.userAgent
+  );
+  if (isMobile) {
+    document.getElementsByClassName("content__product")[0].classList.add("mobile");
+  } else {
+    document.getElementsByClassName("content__product")[0].classList.add("desktop");
+  }
+  // -----------------------------------------
+
   function resizeRendererToDisplaySize(renderer) {
     const canvas = renderer.domElement;
     const pixelRatio = window.devicePixelRatio;
-    const width = (canvas.clientWidth * pixelRatio) | 0;
-    const height = (canvas.clientHeight * pixelRatio) | 0;
-    const needResize = canvas.width !== width || canvas.height !== height;
-    if (needResize) {
-      renderer.setSize(width, height, false);
+    if (isMobile) {
+      const width = (canvas.clientWidth * pixelRatio) | 0;
+      const height = (canvas.clientHeight * pixelRatio) | 0;
+      const needResize = canvas.width !== width || canvas.height !== height;
+      if (needResize) {
+        renderer.setSize(width, height, false);
+      }
+      return needResize;
+    } else {
+      const width = canvas.clientWidth;
+      const height = canvas.clientHeight;
+      const needResize = canvas.width !== width || canvas.height !== height;
+      if (needResize) {
+        renderer.setSize(width, height, false);
+      }
+      return needResize;
     }
-    return needResize;
   }
 
   function render() {
