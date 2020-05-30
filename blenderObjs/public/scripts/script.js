@@ -113,10 +113,10 @@ function main() {
     });
 
     {
-      document.getElementById("yellowcone_Yellowcone_yellowcone").innerHTML = "Желтый конус";
-      document.getElementById("bluesphere_Bluesphere_bluesphere").innerHTML = "Синяя сфера";
-      document.getElementById("redcube_Redcube_redcube").innerHTML = "Красный куб";
-      document.getElementById("KubikRubika_Cube.001").innerHTML = "Кубик Рубика";
+      document.getElementById("yellowcone_Yellowcone_yellowcone").innerHTML = "Yellow Cone";
+      document.getElementById("bluesphere_Bluesphere_bluesphere").innerHTML = "Blue Sphere";
+      document.getElementById("redcube_Redcube_redcube").innerHTML = "Red Cube";
+      document.getElementById("KubikRubika_Cube.001").innerHTML = "Rubik's Cube";
     }
 
     canvas.addEventListener("touchstart", onDocumentMouseEvent, false);
