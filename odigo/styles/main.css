@@ -1,0 +1,278 @@
+/* intro start */
+
+.intro {
+  height: 100%;
+  background: url(../images/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  padding-bottom: 376px;
+}
+
+.intro__title {
+  max-width: 619px;
+  padding-top: 263px;
+  color: white;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 22px
+}
+
+.intro__subtitle {
+  max-width: 546px;
+  color: white;
+  line-height: 24px;
+  margin-bottom: 59px;
+}
+
+.search-form__info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-form__field {
+  width: 297px;
+  /* background-color: transparent; */
+  /* background: transparent url(../images/svg/icon__input_circle.svg) no-repeat; */
+  background: transparent url(../images/svg/icon__input_circle.svg) no-repeat left 5px;
+  background-size: 20px;
+  border: 0;
+  border-bottom: 2px solid #BFC0C5;
+  padding-left: 43px;
+  padding-bottom: 22px;
+
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+
+  margin-right: 60px;
+}
+
+.search-form__field::placeholder {
+  font-size: 18px;
+  color: white;
+}
+.search-form__field:focus::-webkit-input-placeholder {
+  /* color: transparent; */
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.search-form__submit {
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 15px 39px;
+  color: white;
+  background-color: #1B7DFF;
+  border: 0;
+}
+
+.search-form__submit:focus {
+  outline: none;
+}
+.search-form__submit:hover {
+  background-color: #1868d1;
+}
+.search-form__submit:active {
+  background-color: #1856a8;
+}
+
+/* Intro end */
+
+/* --------------------------------------------------- */
+
+/* Benefits start */
+
+.benefits {
+  background-color: white;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.16);
+  margin-top: -223px;
+  margin-bottom: 131px;
+}
+
+.benefits__title {
+  font-size: 35px;
+  font-weight: 500;
+  padding-top: 93px;
+  padding-bottom: 120px;
+}
+
+.benefits__cards {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.benefits__card {
+  margin-right: 55px;
+  margin-bottom: 112px;
+}
+.benefits__card:last-child {
+  margin-right: 0;
+}
+
+.benefits__card_img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 37px;
+}
+
+.benefits__card_title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 26px;
+}
+
+.benefits__card_info {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 39px;
+}
+
+.benefits__card_footer a {
+  text-decoration: none;
+}
+
+.benefits__card_footer span {
+  text-transform: uppercase;
+  color: #006DFE;
+  padding-right: 26px;
+  transition: .5s all;
+}
+
+.benefits__card_footer:hover span {
+  padding-right: 36px;
+  opacity: .75;
+}
+
+/* Benefits end */
+
+/* --------------------------------------------------- */
+
+/* Places start */
+
+.places {
+  height: 600px;
+}
+
+.places__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.places__header_title {
+  font-weight: 500;
+  font-size: 35px;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.title__underline::after {
+  display: block;
+  content: '';
+  margin-top: 7px;
+  width: 253px;
+  height: 3px;
+  background-color: #006DFE;
+}
+
+.places__header_link a {
+  text-transform: uppercase;
+  color: #006DFE;
+  text-decoration: none;
+}
+
+.places__header_link:hover {
+  opacity: .75;
+}
+
+.places__header_link span {
+  padding-right: 26px;
+}
+
+.places__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.places__cards {
+  margin-bottom: 10px;
+}
+.places__cards:last-child {
+  margin-bottom: 131px;
+}
+
+.places__card_large {
+  grid-column: span 3;
+}
+.places__card_large img {
+  height: 354px;
+}
+
+.places__card_small {
+  grid-column: span 2;
+}
+.places__card_small img {
+  height: 283px;
+}
+
+.places__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.places__card::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  transition: .5s all;
+}
+
+.places__card:hover::after {
+  background-color: rgba(21, 24, 36, 0.2);
+  transition: .5s all;
+}
+
+.places__card:hover img {
+  transform: scale(1.05);
+  transition: .5s all;
+}
+
+.places__card_title {
+  position: absolute;
+  left: 29px;
+  bottom: 27px;
+  color: white;
+  font-weight: 700;
+  font-size: 50px;
+  z-index: 100;
+}
+
+.places__card img {
+  object-fit: cover;
+  width: 100%;
+  transition: .5s all;
+}
+
+.places__card_link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+
+/* Places end */
+
