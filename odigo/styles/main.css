@@ -1,0 +1,7 @@
+/* main styles */
+
+.intro {
+  height: 100vh;
+  background: url(../images/intro-bg.jpg) no-repeat center;
+  background-size: cover;
+}
