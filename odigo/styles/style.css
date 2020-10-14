@@ -255,6 +255,7 @@ img {
 .benefits__card_info {
   font-size: 16px;
   font-weight: 400;
+  line-height: 24px;
   margin-bottom: 39px;
 }
 
@@ -451,13 +452,14 @@ img {
   max-width: 360px;
   font-weight: 500;
   font-size: 30px;
-  margin-bottom: 65px;
+  margin-bottom: 50px;
 }
 
 .tours__card_preview {
   font-weight: 400;
   font-size: 16px;
-  margin-bottom: 65px;
+  line-height: 24px;
+  margin-bottom: 50px;
 }
 
 .tours__card_footer span {
@@ -478,8 +480,99 @@ img {
 
 /* Places start */
 
+.places {
+  margin-bottom: 131px;
+}
+
 .places__header {
   margin-bottom: 54px;
+}
+
+.places__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.places__card {
+  width: 380px;
+  margin-bottom: 58px;
+}
+
+.places__card_img img {
+  width: 100%;
+}
+
+.places__card_img {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.places__card_footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(21, 24, 36, 0.6);
+
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+.places__card_title a {
+  color: white;
+}
+
+.places__card_statistic {
+  display: flex;
+}
+
+.places__card_statistic span {
+  margin-right: 3px;
+}
+
+.places__card_statistic-like img {
+  width: 16px;
+  height: 16px;
+  padding-bottom: 3px;
+}
+
+.places__card_statistic-like {
+  margin-right: 14px;
+}
+
+.places__card_statistic-comment img {
+  width: 15px;
+  height: 15px;
+  padding-bottom: 2px;
+}
+
+.places__card_info {
+  margin-bottom: 31px;
+  line-height: 24px;
+}
+
+.places__card_button {
+  display: inline-block;
+  text-transform: uppercase;
+  color: white;
+  padding: 12px 19px;
+  background-color: #006DFE;
+  border: 0;
+}
+
+.places__card_button:hover {
+  background-color: #1868d1;
+}
+
+.places__card_button:active {
+  background-color: #1856a8;
 }
 
 /* Places end */
