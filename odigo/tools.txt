@@ -1,0 +1,14 @@
+CSS
+css autoprefixer online - https://autoprefixer.github.io/
+css minifier online - https://cssminifier.com/
+_________________________________________________________________________________________________________
+
+
+JS
+babel online - https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=script&lineWrap=true&presets=env%2Creact%2Cstage-2%2Cenv&prettier=false&targets=&version=7.12.0&externalPlugins=
+JS minifier online - https://javascript-minifier.com/
+_________________________________________________________________________________________________________
+
+
+HTML
+validator online - https://validator.w3.org/
