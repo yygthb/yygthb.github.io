@@ -172,7 +172,7 @@ img {
   padding: 16px 15px;
   background-color: var(--header-bg-color);
   transform: translateY(-100%);
-  transition: .5s linear;
+  transition: .3s linear;
 }
 
 .tablet__menu_item {
