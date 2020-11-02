@@ -1050,5 +1050,10 @@ img {
   .footer a {
     font-size: 14px;
   }
+}
 
+@media only screen and (max-height: 500px) {
+  .intro__subtitle {
+    display: none;
+  }
 }

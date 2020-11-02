@@ -1,3 +1,8 @@
+IMG
+images optimizer - https://imagecompressor.com/ru/
+_________________________________________________________________________________________________________
+
+
 CSS
 css autoprefixer online - https://autoprefixer.github.io/
 css minifier online - https://cssminifier.com/
