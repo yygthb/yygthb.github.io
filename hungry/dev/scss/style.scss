@@ -1,0 +1,86 @@
+@import 'variables';
+@import 'typography';
+@import 'forms';
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  font-family: $fontOpenSansReg;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.content-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+
+  &.line::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: $introOpacityLine;
+    z-index: -1;
+  }
+  
+  &.line::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 16%;
+    width: 68%;
+    border-left: 1px solid $introOpacityLine;
+    border-right: 1px solid $introOpacityLine;
+    z-index: -1;
+  }
+
+  &.line.line-intro::after {
+    top: 200px;
+    transition: $headerAnimation;
+
+    @media (max-width: 1100px) {
+      top: 180px;
+    }
+    @media (max-width: 950px) {
+      top: 160px;
+    }
+    @media (max-width: 800px) {
+      top: 130px;
+    }
+  }
+  &.line.line-intro.scroll::after {
+    top: 100px;
+    transition: $headerAnimation;
+  }
+  &.line.line-intro::before {
+    top: 100px;
+  }
+}
+
+
+@import 'header';
+@import 'intro';
+@import 'about';
+@import 'team';
+@import 'book';
+@import 'special';
+@import 'menu';
+@import 'events';
+@import 'gallery';
+@import 'contact';
+@import 'footer';

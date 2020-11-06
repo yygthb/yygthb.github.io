@@ -1,0 +1,27 @@
+h1, h3, h4 {
+
+  font-family: $fontBannyBold;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+
+  &::after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 5px;
+    background-color: $mainColor;
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: 0;
+    margin-bottom: 15px;
+  }
+}
+
+h2 {
+  font-family: $fontOpenSansBold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}

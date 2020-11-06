@@ -22,10 +22,8 @@
       let scrollToLink = '';
       blockId === '' ? scrollToLink = "id-intro" : scrollToLink = blockId
 
-      // const yOffSet = -6071
       const yOffSet = -header.offsetHeight -20
       const element = document.querySelector(`#${scrollToLink}`)
-      console.log('element: ', element)
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffSet
 
       window.scrollTo({

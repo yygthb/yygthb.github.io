@@ -1,0 +1,25 @@
+.section-footer {
+  height: 100px;
+  background-color: $bgFooterColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2px;
+
+  h3 {
+    font-size: 36px;
+    padding-bottom: 0;
+
+    a {
+      color: white;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

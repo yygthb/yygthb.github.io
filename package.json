@@ -1,0 +1,27 @@
+{
+  "name": "yygthb.github.io",
+  "version": "1.0.0",
+  "description": "web experiments",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "\"Youri Ya\" <yy.ainu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yygthb/yygthb.github.io/issues"
+  },
+  "homepage": "https://github.com/yygthb/yygthb.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.1.0"
+  }
+}

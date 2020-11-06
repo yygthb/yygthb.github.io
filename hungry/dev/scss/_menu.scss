@@ -1,0 +1,115 @@
+.section-menu {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .section-menu-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .section-menu-title {
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
+    }
+  
+    .section-menu-subtitle  {
+      width: 565px;
+      font-family: $fontOpenSansBold;
+      font-size: 18px;
+      line-height: 28px;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  
+    .section-menu-header {
+      height: 50px;
+      display: flex;
+      margin-bottom: 50px;
+  
+      .section-menu-header-item {
+        width: 120px;
+        list-style: none;
+        font-family: $fontOpenSansBold;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid rgba(#515151, .2);
+        cursor: pointer;
+
+        @media (max-width: 900px) {
+          width: 100px;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+
+        &::after {
+          display: block;
+          content: '';
+          width: 20px;
+          height: 3px;
+          background-color: rgba(#515151, .2);
+        }
+
+        &.active {
+          &::after {
+            display: block;
+            content: '';
+            width: 20px;
+            height: 3px;
+            background-color: $mainColor;
+          }
+        }
+      }
+    }
+
+    .section-menu-content {
+      width: 100%;
+
+      .menu-content-wrap {
+        display: none;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+
+        &:nth-child(2) {
+          display: flex;
+        }
+      }
+
+      .dish-wrap {
+        width: 363px;
+        margin: 0 5px 30px;
+        
+        .dish-wrap-row {
+          display: flex;
+          justify-content: space-between;
+          font-family: $fontBannyBold;
+          font-size: 18px;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+
+          .dish-title a {
+            color: black;
+          }
+        }
+
+        .dish-description {
+          font-size: 14px;
+          opacity: .8;
+        }
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.section-gallery {
+  display: flex;
+  width: 100%;
+
+  .gallery-image-box {
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+
+    &:hover img {
+      transform: scale(1.05);
+      transition: .5s;
+    }
+
+    .gallery-image-link {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $bgShadowCover;
+      transition: .5s;
+
+      &:hover {
+        background-color: transparent;
+        transition: .5s;
+      }
+    }    
+
+    img {
+      width: 100%;
+      transition: .5s;
+    }
+  }
+}

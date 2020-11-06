@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'banny';
+  src: url('../fonts/banny-cufonfonts/Banny-Round.otf');
+}
+@font-face {
+  font-family: 'bannyBold';
+  src: url('../fonts/banny-cufonfonts/Banny-BoldRound.otf');
+}
+
+@font-face {
+  font-family: 'openSans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf')
+}
+@font-face {
+  font-family: 'openSansBold';
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf')
+}
+
+// fonts: 
+$fontBannyReg: 'banny';
+$fontBannyBold: 'bannyBold';
+$fontOpenSansReg: 'openSans';
+$fontOpenSansBold: 'openSansBold';
+
+// global
+$mainColor: #E8C300;
+$mainColorHover: #dab500;
+$errorColor: #da2800;
+$bgShadowCover: rgba(00, 00, 00, 0.6);
+$bgFooterColor: rgba(00, 00, 00, 0.9);
+
+// intro
+$introOpacityLine: rgba(#ffffff, .2);
+$introOpacityLineHover: rgba(#ffffff, .75);
+
+// timing
+$headerAnimation: 1s;
