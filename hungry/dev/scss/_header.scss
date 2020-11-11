@@ -6,6 +6,10 @@
   z-index: 99;
   transition: $headerAnimation;
 
+  a {
+    outline: none;
+  }
+
   .section-header-wrap {
     height: 100px;
     display: flex;

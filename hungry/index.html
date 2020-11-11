@@ -194,23 +194,71 @@
         <div class="section-special-header">
           <h2>specialties</h2>
         </div>
-        <div class="section-special-main">
-          <div class="section-special-image">
-            <img src="./images/img_special.jpg" alt="master chef" class="special-image">
-            <img src="./images/frame.svg" class="frame">
+
+        <!-- slider start -->
+        <div class="section-special-slider">
+          <div class="slides">
+            
+            <!-- radio inputs (display: hidden) -->
+            <input class="radio" name="radio-btn" type="radio" id="radio1">
+            <input class="radio" name="radio-btn" type="radio" id="radio2" checked>
+            <input class="radio" name="radio-btn" type="radio" id="radio3">
+
+            <!-- slides start -->
+            <div class="slide first">
+              <div class="section-special-main">
+                <div class="section-special-image">
+                  <img src="./images/img_special1.jpg" alt="master chef" class="special-image">
+                  <img src="./images/frame.svg" class="frame">
+                </div>
+                <div class="info-box">
+                  <h3 class="info-box-title">Apple Cinnamon Crepes</h3>
+                  <div class="info-box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+                  <div class="info-box-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="section-special-main">
+                <div class="section-special-image">
+                  <img src="./images/img_special2.jpg" alt="master chef" class="special-image">
+                  <img src="./images/frame.svg" class="frame">
+                </div>
+                <div class="info-box">
+                  <h3 class="info-box-title">chocolate pancakes</h3>
+                  <div class="info-box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+                  <div class="info-box-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="section-special-main">
+                <div class="section-special-image">
+                  <img src="./images/img_special3.jpg" alt="master chef" class="special-image">
+                  <img src="./images/frame.svg" class="frame">
+                </div>
+                <div class="info-box">
+                  <h3 class="info-box-title">Pink Chicken Curry</h3>
+                  <div class="info-box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+                  <div class="info-box-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                </div>
+              </div>
+            </div>
+            <!-- slides end -->
+
+            <!-- slide manual navigation start -->
+            <div class="navigation-manual">
+              <label for="radio1" class="manual-btn" id="label1"></label>
+              <label for="radio2" class="manual-btn" id="label2"></label>
+              <label for="radio3" class="manual-btn" id="label3"></label>
+            </div>
+            <!-- slide manual navigation end -->
           </div>
-          <div class="info-box">
-            <h3 class="info-box-title">chocolate pancakes</h3>
-            <div class="info-box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
-            <div class="info-box-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
-          </div>
+
         </div>
+        <!-- slider end -->
+
         <div class="section-special-footer">
-          <div class="special-footer-wrap">
-            <span class="select"></span>
-            <span class="select active"></span>
-            <span class="select"></span>
-          </div>
         </div>
       </div>
     </div>

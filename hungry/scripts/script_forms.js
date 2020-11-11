@@ -34,7 +34,6 @@
         date: date.value,
         time: time.value
       }
-      console.log('заказ столика: ', bookingObj)
       name.value = ''
       email.value = ''
       phone.value = ''
@@ -44,11 +43,11 @@
     } else 
     if (name.value.trim() === '') {
       _warningOpen(name, 'Name')
-      setTimeout(_warningClose, 2000)
+      setTimeout(_warningClose, 5000)
     } else 
     if (phone.value.trim() === '') {
       _warningOpen(phone, 'Phone')
-      setTimeout(_warningClose, 2000)
+      setTimeout(_warningClose, 5000)
     }
   }
 
@@ -68,14 +67,11 @@
         message: message.value,
       }
 
-      console.log('message to server: ', messageObj)
       name.value = ''
       email.value = ''
       phone.value = ''
       message.value = ''
     }
-
-    console.log('contact button')
   }
 
 })()
