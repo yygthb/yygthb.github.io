@@ -52,9 +52,9 @@
 
           .event-title {
             position: absolute;
-            bottom: -0.2px;
+            bottom: -.5px;
             width: 17%;
-            height: 100.2%;
+            height: 100.5%;
             background-color: black;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
@@ -94,7 +94,7 @@
         &.right {
 
           .event-title {
-            left: 0;
+            left: -1px;
             transform: rotate(180deg);
           }
 
