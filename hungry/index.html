@@ -10,6 +10,7 @@
 
 <body>
 
+  <!-- Header -->
   <header class="section-header">
     <div class="content-wrap">
       <div class="section-header-wrap">
@@ -45,6 +46,26 @@
       </div>
     </div>
   </header>
+  <!-- / Header -->
+
+  <!-- Header Mobile -->
+  <section class="section-header-mobile">
+    <div class="content-wrap">
+      <div class="section-header-mobile-wrap">
+        <div class="section-header-mobile-logo">
+          <a href="#home">
+            <img class="header-mobile-logo" src="./images/wheel.svg" alt="">
+          </a>
+        </div>
+        <div class="section-header-mobile-burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- / Header Mobile -->
   
   <!-- Intro -->
   <section class="section-intro" id="home">
@@ -100,22 +121,26 @@
   <!-- About -->
   <section class="section-about" id="about">
     <div class="content-wrap">
-      <div class="section-about-wrap">
-        <div class="info-box">
-          <h3 class="info-box-title">about us</h3>
-          <div class="info-box-subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+      <div class="section-wrap light">
+        <div class="section-wrap_header"></div>
+        <div class="section-wrap_main">
+          <div class="sect-info">
+            <h3 class="info-title">about us</h3>
+            <div class="info-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+            </div>
+            <div class="info-text">
+              Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+            </div>
           </div>
-          <div class="info-box-text">
-            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+          <div class="sect-image">
+            <div class="image-wrap">
+              <img src="./images/img_about.jpg" alt="about us" class="sect-image_img light">
+            </div>
+            <img src="./images/frame.svg" class="sect-image_frame">
           </div>
         </div>
-        <div class="section-about-image">
-          <div class="image-wrap">
-            <img src="./images/img_about.jpg" alt="about us" class="about-image">
-          </div>
-          <img src="./images/frame.svg" class="frame">
-        </div>
+        <div class="section-wrap_footer"></div>
       </div>
     </div>
   </section>
@@ -124,21 +149,28 @@
   <!--/ Team -->
   <section class="section-team" id="team">
     <div class="content-wrap line">
-      <div class="section-team-wrap">
-        <div class="section-team-header">
+      <div class="section-wrap dark">
+        <div class="section-wrap_header">
           <h2>our team</h2>
         </div>
-        <div class="section-team-main">
-          <div class="section-team-image">
-            <img src="./images/img_team.jpg" alt="master chef" class="team-image">
-            <img src="./images/frame.svg" class="frame">
+        <div class="section-wrap_main">
+          <div class="sect-image right">
+            <div class="image-wrap">
+              <img src="./images/img_team.jpg" alt="about us" class="sect-image_img dark">
+            </div>
+            <img src="./images/frame.svg" class="sect-image_frame">
           </div>
-          <div class="info-box">
-            <h3 class="info-box-title">master chef</h3>
-            <div class="info-box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
-            <div class="info-box-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+          <div class="sect-info">
+            <h3 class="info-title">master chef</h3>
+            <div class="info-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+            </div>
+            <div class="info-text">
+              Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+            </div>
           </div>
         </div>
+        <div class="section-wrap_footer"></div>
       </div>
     </div>
   </section>
@@ -147,10 +179,11 @@
   <!-- / Booking -->
   <section class="section-booking" id="booking">
     <div class="content-wrap">
-      <div class="section-booking-wrap">
-        <div class="booking-content">
-          <div class="section-booking-text">
-            <h3 class="booking-title">book a table</h3>
+      <div class="section-wrap light">
+        <div class="section-wrap_header"></div>
+        <div class="section-wrap_main">
+          <div class="sect-info">
+            <h3 class="info-title">book a table</h3>
             <form class="booking-form">
               <div class="form-row-2">
                 <input type="text" placeholder="Name" id="booking_name" name="booking_name">
@@ -172,12 +205,14 @@
               </div>
             </form>
           </div>
-          <div class="section-booking-image">
-            <img src="./images/img_booking.jpg" class="booking-image" alt="book a table">
-            <img src="./images/frame.svg" class="frame">
+          <div class="sect-image">
+            <div class="image-wrap">
+              <img src="./images/img_booking.jpg" alt="book a table" class="sect-image_img light">
+            </div>
+            <img src="./images/frame.svg" class="sect-image_frame">
           </div>
         </div>
-        <div class="booking-bottom">
+        <div class="section-wrap_footer">
           <div class="timing">
             Mon - Fri: <span>6PM - 12PM</span>, Sat - Sun: <span>8PM - 3AM</span>, Phone: <span>+40 729 131 637 / +40 726 458 782</span>
           </div>
@@ -190,15 +225,15 @@
   <!-- / Specialties -->
   <section class="section-special" id="special">
     <div class="content-wrap line">
-      <div class="section-special-wrap">
-        <div class="section-special-header">
+      <div class="section-wrap dark">
+        <div class="section-wrap_header">
           <h2>specialties</h2>
         </div>
 
         <!-- slider start -->
         <div class="section-special-slider">
           <div class="slides">
-            
+
             <!-- radio inputs (display: hidden) -->
             <input class="radio" name="radio-btn" type="radio" id="radio1">
             <input class="radio" name="radio-btn" type="radio" id="radio2" checked>
@@ -206,41 +241,47 @@
 
             <!-- slides start -->
             <div class="slide first">
-              <div class="section-special-main">
-                <div class="section-special-image">
-                  <img src="./images/img_special1.jpg" alt="master chef" class="special-image">
-                  <img src="./images/frame.svg" class="frame">
+              <div class="section-wrap_main">
+                <div class="sect-image right">
+                  <div class="image-wrap">
+                    <img src="./images/img_special1.jpg" alt="master chef" class="sect-image_img dark">
+                  </div>
+                  <img src="./images/frame.svg" class="sect-image_frame">
                 </div>
-                <div class="info-box">
-                  <h3 class="info-box-title">Apple Cinnamon Crepes</h3>
-                  <div class="info-box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
-                  <div class="info-box-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
-                </div>
-              </div>
-            </div>
-            <div class="slide">
-              <div class="section-special-main">
-                <div class="section-special-image">
-                  <img src="./images/img_special2.jpg" alt="master chef" class="special-image">
-                  <img src="./images/frame.svg" class="frame">
-                </div>
-                <div class="info-box">
-                  <h3 class="info-box-title">chocolate pancakes</h3>
-                  <div class="info-box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
-                  <div class="info-box-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                <div class="sect-info">
+                  <h3 class="info-title">Apple Cinnamon Crepes</h3>
+                  <div class="info-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+                  <div class="info-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
                 </div>
               </div>
             </div>
             <div class="slide">
-              <div class="section-special-main">
-                <div class="section-special-image">
-                  <img src="./images/img_special3.jpg" alt="master chef" class="special-image">
-                  <img src="./images/frame.svg" class="frame">
+              <div class="section-wrap_main">
+                <div class="sect-image right">
+                  <div class="image-wrap">
+                    <img src="./images/img_special2.jpg" alt="master chef" class="sect-image_img dark">
+                  </div>
+                  <img src="./images/frame.svg" class="sect-image_frame">
                 </div>
-                <div class="info-box">
-                  <h3 class="info-box-title">Pink Chicken Curry</h3>
-                  <div class="info-box-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
-                  <div class="info-box-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                <div class="sect-info">
+                  <h3 class="info-title">chocolate pancakes</h3>
+                  <div class="info-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+                  <div class="info-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="section-wrap_main">
+                <div class="sect-image right">
+                  <div class="image-wrap">
+                    <img src="./images/img_special3.jpg" alt="master chef" class="sect-image_img dark">
+                  </div>
+                  <img src="./images/frame.svg" class="sect-image_frame">
+                </div>
+                <div class="sect-info">
+                  <h3 class="info-title">Pink Chicken Curry</h3>
+                  <div class="info-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+                  <div class="info-text">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</div>
                 </div>
               </div>
             </div>
@@ -253,12 +294,12 @@
               <label for="radio3" class="manual-btn" id="label3"></label>
             </div>
             <!-- slide manual navigation end -->
-          </div>
 
+          </div>
         </div>
         <!-- slider end -->
 
-        <div class="section-special-footer">
+        <div class="section-wrap_footer">
         </div>
       </div>
     </div>
@@ -268,18 +309,20 @@
   <!-- / Menu -->
   <section class="section-menu" id="menu">
     <div class="content-wrap">
-      <div class="section-menu-wrap">
-        <h3 class="section-menu-title">Delicious menu</h3>
-        <div class="section-menu-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
-        <div class="section-menu-header">
-          <li class="section-menu-header-item" id="soup">soup</li>
-          <li class="section-menu-header-item active" id="pizza">pizza</li>
-          <li class="section-menu-header-item" id="pasta">pasta</li>
-          <li class="section-menu-header-item" id="dessert">dessert</li>
-          <li class="section-menu-header-item" id="wine">wine</li>
-          <li class="section-menu-header-item" id="beer">beer</li>
-          <li class="section-menu-header-item" id="drinks">drinks</li>
-        </div>
+      <div class="section-wrap light">
+        <div class="section-wrap_header"></div>
+        <div class="section-wrap_main column">
+          <h3 class="info-title">Delicious menu</h3>
+          <div class="info-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</div>
+          <div class="section-menu-header">
+            <li class="section-menu-header-item" id="soup">soup</li>
+            <li class="section-menu-header-item active" id="pizza">pizza</li>
+            <li class="section-menu-header-item" id="pasta">pasta</li>
+            <li class="section-menu-header-item" id="dessert">dessert</li>
+            <li class="section-menu-header-item" id="wine">wine</li>
+            <li class="section-menu-header-item" id="beer">beer</li>
+            <li class="section-menu-header-item" id="drinks">drinks</li>
+          </div>
           <div class="section-menu-content">
 
             <!-- SOUP -->
@@ -577,8 +620,10 @@
               </div>
             </div>
             <!-- / DRINKS -->
-
+            
+          </div>
         </div>
+        <div class="section-wrap_footer"></div>
       </div>
     </div>
   </section>
@@ -587,28 +632,30 @@
   <!-- / Events -->
   <section class="section-events" id="events">
     <div class="content-wrap line">
-      <div class="section-events-wrap">
-        <div class="section-events-top">
-          <h2 class="section-events-title">private events</h2>
+      <div class="section-wrap dark">
+        <div class="section-wrap_header">
+          <h2>private events</h2>
         </div>
-        <div class="section-events-main">
-          <div class="events-main-wrap left">
-            <div class="events-main-wrap-image">
-              <img src="./images/img_events_1.jpg" alt="wedding">
+        <div class="section-wrap_main">
+          <div class="sect-image right">
+            <div class="image-wrap">
+              <img src="./images/img_events_1.jpg" alt="about us" class="sect-image_img dark">
               <span class="event-title">weddings</span>
             </div>
-            <img src="./images/frame.svg" class="frame">
+            <img src="./images/frame.svg" class="sect-image_frame">
           </div>
-          <div class="events-main-wrap right">
-            <div class="events-main-wrap-image">
-              <img src="./images/img_events_2.jpg" alt="celebration">
+          <div class="sect-image">
+            <div class="image-wrap">
+              <img src="./images/img_events_2.jpg" alt="about us" class="sect-image_img dark">
               <span class="event-title">corporate parties</span>
             </div>
-            <img src="./images/frame.svg" class="frame">
+            <img src="./images/frame.svg" class="sect-image_frame">
           </div>
         </div>
-        <div class="section-events-bottom">
-          For private events please call:&nbsp;<span>+40 729 131 637 / +40 726 458 782</span>&nbsp;or use the contact form.
+        <div class="section-wrap_footer">
+          <div>
+            For private events please call:&nbsp;<span>+40 729 131 637 / +40 726 458 782</span>&nbsp;or use the contact form.
+          </div>
         </div>
       </div>
     </div>
@@ -639,26 +686,32 @@
   <!-- / Contact -->
   <section class="section-contact" id="contact">
     <div class="content-wrap">
-      <form class="section-contact-wrap">
-        <h3 class="section-contact-title">contact</h3>
-        <div class="section-contact-subtitle">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+      <div class="section-wrap light">
+        <div class="section-wrap_header"></div>
+        <div class="section-wrap_main">
+          <form class="contact-form">
+            <h3 class="info-title">contact</h3>
+            <div class="info-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+            </div>
+            <div class="contact-row">
+              <input type="text" placeholder="Name" id="contact_name">
+              <input type="email" placeholder="Email" id="contact_email">
+              <input type="text" placeholder="Phone" id="contact_phone">
+            </div>
+            <textarea class="contact-message" name="contact_message" id="contact_message" placeholder="Message"></textarea>
+            <div class="contact-row">
+              <div class="contact-info">
+                <span><img src="../images/icon/icon_place.svg"> 5th London Boulevard, U.K.</span>
+                <span><img src="../images/icon/icon_phone.svg"> +40 729 131 637 / +40 726 458 782</span>
+                <span><img src="../images/icon/icon_email.svg"> office@mindblister.com</span>
+              </div>
+              <button class="btn btn_yellow btn_contact">send message</button>
+            </div>
+          </form>
         </div>
-        <div class="section-contact-row">
-          <input type="text" placeholder="Name" id="contact_name">
-          <input type="email" placeholder="Email" id="contact_email">
-          <input type="text" placeholder="Phone" id="contact_phone">
-        </div>
-        <textarea class="section-contact-message" name="contact_message" id="contact_message" placeholder="Message"></textarea>
-        <div class="section-contact-row">
-          <div class="section-contact-info">
-            <span><img src="../images/icon/icon_place.svg"> 5th London Boulevard, U.K.</span>
-            <span><img src="../images/icon/icon_phone.svg"> +40 729 131 637 / +40 726 458 782</span>
-            <span><img src="../images/icon/icon_email.svg"> office@mindblister.com</span>
-          </div>
-          <button class="btn btn_yellow btn_contact">send message</button>
-        </div>
-      </form>
+        <div class="section-wrap_footer"></div>
+      </div>
     </div>
   </section>
   <!-- Contact -->
@@ -671,9 +724,22 @@
 
   <!-- / Footer -->
   <section class="section-footer" id="footer">
-    <h3>
-      <a href="#home">HUNGRY PEOPLE</a>
-    </h3>
+    <div class="content-wrap">
+      <div class="footer-wrap">
+        <h3 class="intro-content-main-title"><a href="#home">hungry people</a></h3>
+        <div>
+          <a title="facebook" class="intro-content-social-item" target="_black" href="https://www.google.com">
+            <img class="intro-content-social-item-img" src="./images/social/icon_facebook.svg" alt="facebook">
+          </a>
+          <a title="twitter" class="intro-content-social-item" target="_black" href="http://www.google.com">
+            <img class="intro-content-social-item-img" src="./images/social/icon_twitter.svg" alt="twitter">
+          </a>
+          <a title="instargam" class="intro-content-social-item" target="_black" href="https://www.google.com">
+            <img class="intro-content-social-item-img" src="./images/social/icon_instagram.svg" alt="instargam">
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- / Footer -->
 

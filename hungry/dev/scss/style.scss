@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'typography';
-@import 'forms';
+@import 'blocks';
 
 * {
   box-sizing: border-box;
@@ -34,6 +34,10 @@ body {
     height: 100%;
     background-color: $introOpacityLine;
     z-index: -1;
+
+    @media (max-width: 760px) {
+      display: none;
+    }
   }
   
   &.line::before {
@@ -47,6 +51,10 @@ body {
     border-left: 1px solid $introOpacityLine;
     border-right: 1px solid $introOpacityLine;
     z-index: -1;
+
+    @media (max-width: 760px) {
+      display: none;
+    }
   }
 
   &.line.line-intro::after {
@@ -72,10 +80,10 @@ body {
   }
 }
 
-
+@import 'grids';
 @import 'header';
+@import 'headerMobile';
 @import 'intro';
-@import 'about';
 @import 'team';
 @import 'book';
 @import 'special';
@@ -84,3 +92,4 @@ body {
 @import 'gallery';
 @import 'contact';
 @import 'footer';
+@import 'media';

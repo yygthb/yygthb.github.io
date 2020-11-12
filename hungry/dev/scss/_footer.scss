@@ -1,25 +1,37 @@
 .section-footer {
-  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: $bgFooterColor;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white;
   margin-top: -2px;
 
-  h3 {
-    font-size: 36px;
-    padding-bottom: 0;
-
-    a {
-      color: white;
-
-      &:hover {
-        opacity: .8;
+  .footer-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    h3 {
+      font-size: 46px;
+      padding-bottom: 0;
+  
+      a {
+        color: white;
+  
+        &:hover {
+          opacity: .8;
+        }
+      }
+  
+      &::after {
+        display: none;
       }
     }
 
-    &::after {
-      display: none;
+    div {
+      a:not(:last-child) {
+        margin-right: 15px;
+      }
     }
   }
 }

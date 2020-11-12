@@ -1,119 +1,52 @@
-.section-booking-wrap {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
+.booking-form {
+  width: 100%;
+  padding-left: 23px;
+  padding-right: 23px;
 
-  .booking-content {
-    padding-top: 100px;
+  @media (max-width: 1100px) {
+    padding: 0;
+  }
+
+  .form-row-2 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 
-    .section-booking-text {
-      width: 47%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      // @media (max-width: 1100px) {
-      //   width: 50%;
-      // }
-
-      .booking-title {
-        font-size: 36px;
-        line-height: 48px;
-      }
-
-      .booking-form {
-        width: 100%;
-        padding-left: 23px;
-        padding-right: 23px;
-
-        @media (max-width: 1100px) {
-          padding: 0;
-        }
-      
-        .form-row-2 {
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 10px;
-  
-          input:first-child {
-            margin-right: 10px;
-          }
-
-          input:focus {
-            border: 0;
-          }
-          input:active {
-            border: 0;
-          }
-        }
-
-        .form-row-1 {
-          width: 100%;
-          margin-bottom: 10px;
-
-          .booking-warning-message {
-            display: none;
-            // display: flex;
-            height: 40px;
-            border-radius: 5px;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid $errorColor;
-            color: $errorColor;
-            font-size: 14px;
-            line-height: 1px;
-            transition: 2s;
-
-            span {
-              font-family: $fontOpenSansBold;
-            }
-          }
-
-          button {
-            width: 100%;
-          }
-        }
-      }
+    input:first-child {
+      margin-right: 10px;
     }
 
-    .section-booking-image {
-      width: 47%;
-      position: relative;
-      display: flex;
-      align-self: center;
-
-      .booking-image {
-        width: 79%;
-        box-shadow: 0px 0px 25px 5px lightgray;
-        border-radius: 5px;
-      }
-
-      .frame {
-        position: absolute;
-        width: 41.6%;
-        position: absolute;
-        right: 0;
-        top: 25%;
-        z-index: 2;
-      }
+    input:focus {
+      border: 0;
+    }
+    input:active {
+      border: 0;
     }
   }
 
-  .booking-bottom {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba($color: #333333, $alpha: .5);
-    font-family: $fontOpenSansReg;
-    font-size: 12px;
-    line-height: 12px;
+  .form-row-1 {
+    width: 100%;
+    margin-bottom: 10px;
 
-    span {
-      font-family: $fontOpenSansBold;
+    .booking-warning-message {
+      display: none;
+      height: 40px;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid $errorColor;
+      color: $errorColor;
+      font-size: 14px;
+      line-height: 1px;
+      transition: 2s;
+
+      span {
+        font-family: $fontOpenSansBold;
+      }
+    }
+
+    button {
+      width: 100%;
     }
   }
 }

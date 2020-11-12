@@ -1,66 +1,48 @@
-.section-contact {
-  padding: 100px 0;
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  .section-contact-wrap {
-
+  .contact-row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
 
-    .section-contact-title {
-      font-size: 36px;
-      line-height: 48px;
-    }
-
-    .section-contact-subtitle {
-      width: 565px;
-      font-family: $fontOpenSansBold;
-      font-size: 18px;
-      line-height: 28px;
-      margin-bottom: 50px;
-      text-align: center;
-    }
-
-    .section-contact-row {
-      display: flex;
-      width: 100%;
-      margin-bottom: 10px;
-
-      input {
-        margin-right: 10px;
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-
-    .section-contact-message {
-      width: 100%;
-      height: 120px;
-      margin-bottom: 10px;
-    }
-
-    .section-contact-info {
-      width: 630px;
-      font-family: $fontOpenSansBold;
-      font-size: 12px;
-      line-height: 12px;
-      color: rgba($color: #333333, $alpha: .5);
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
+    input {
       margin-right: 10px;
-      
-      flex-shrink: 1;
 
-      span img {
-        padding-bottom: 5px;
+      &:last-child {
+        margin-right: 0;
       }
     }
+  }
 
-    .btn_contact {
-      flex-grow: 1;
+  .contact-message {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+  }
+
+  .contact-info {
+    width: 630px;
+    font-family: $fontOpenSansBold;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba($color: #333333, $alpha: .5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 10px;
+    
+    flex-shrink: 1;
+
+    span img {
+      padding-bottom: 5px;
     }
+  }
+
+  .btn_contact {
+    flex-grow: 1;
   }
 }

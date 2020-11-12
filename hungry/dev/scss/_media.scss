@@ -1,0 +1,27 @@
+// @media only screen and (max-width: 760px) {
+@media (max-width: 760px) {
+  header {
+    display: none;
+  }
+
+  // Intro
+  .section-header-mobile {
+    display: block;
+  }
+  .intro-content-top {
+    flex-basis: 0 !important;
+  }
+  .intro-content-mid {
+    display: flex;
+    justify-content: center;
+
+    .intro-content-shedule {
+      display: none;
+    }
+    .intro-content-social {
+      display: none !important;
+    }
+  }
+
+
+}
