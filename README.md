@@ -14,4 +14,4 @@
 [blenderObjs]: <https://yygthb.github.io/blenderObjs/>
 [odigo]: <https://yygthb.github.io/html/odigo/>
 [secure]: <https://yygthb.github.io/html/secure/>
-[hungry]: <https://yygthb.github.io/html/hungry/>
+[hungry]: <https://yygthb.github.io/html/hungry/index>
