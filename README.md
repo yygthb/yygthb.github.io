@@ -12,6 +12,6 @@
 - [hungry] _(min-height 678px)_ - [макет](https://www.figma.com/file/YMLK4BwcowltWe0ZyLgOyrOp/Hunger---Website-Template?node-id=0%3A1) из Figma
 
 [blenderObjs]: <https://yygthb.github.io/blenderObjs/>
-[odigo]: <https://yygthb.github.io/odigo/>
-[secure]: <https://yygthb.github.io/secure/>
-[hungry]: <https://yygthb.github.io/hungry/>
+[odigo]: <https://yygthb.github.io/html/odigo/>
+[secure]: <https://yygthb.github.io/html/secure/>
+[hungry]: <https://yygthb.github.io/html/hungry/>
