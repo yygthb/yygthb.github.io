@@ -1,0 +1,73 @@
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 40px 30px;
+  position: relative;
+}
+.button:active {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+.button-icon {
+  font-size: 50px;
+  color: #444;
+  margin-bottom: 20px;
+  transition: .5s color;
+  position: absolute;
+  top: -60px;
+  z-index: 2;
+}
+.button-click {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background: linear-gradient(#000, #444);
+  border-radius: 50%;
+  position: relative;
+}
+.button-click::before {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 50%;
+  background-color: #222;
+  border: 2px solid #191919;
+}
+.button-click::after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #000;
+  transform: translate(-50%, -50%);
+}
+.button-click:active {
+  background: linear-gradient(to top, #000, #444);
+}
+.button-checker {
+  display: none;
+}
+.button-checker:checked ~ .button-click::after {
+  background-color: rgb(91, 217, 255);
+}
+.button-checker:checked ~ .button-icon {
+  color: rgb(91, 217, 255);
+}
