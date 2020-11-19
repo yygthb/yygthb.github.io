@@ -1,0 +1,73 @@
+:root {
+  --borderDark: #777;
+  --borderDarkHover: #ddd;
+  --borderLight: #eee;
+  --borderLightHover: black;
+}
+
+body {
+  height: 2000px;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+  transform: translateY(25px);
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-to-top::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  /* ⇑ ↑ */
+  content: '⇈';
+}
+
+.scroll-to-top_svg-path {
+  fill: none;
+  stroke-width: 4px;
+  transition: .5s;
+}
+
+body.dark .scroll-to-top {
+  color: var(--borderDark);
+  box-shadow: inset 0 0 0 4px var(--borderDark);
+}
+body.dark .scroll-to-top:hover::after {
+  color: var(--borderDarkHover);
+}
+body.dark .scroll-to-top_svg-path {
+  stroke: var(--borderDarkHover);
+}
+
+body.light .scroll-to-top {
+  color: var(--borderLight);
+  box-shadow: inset 0 0 0 4px var(--borderLight);
+}
+body.light .scroll-to-top:hover::after {
+  color: var(--borderLightHover);
+}
+body.light .scroll-to-top_svg-path {
+  stroke: var(--borderLightHover);
+}
