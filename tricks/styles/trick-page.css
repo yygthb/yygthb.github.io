@@ -6,41 +6,57 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #1e2835;
 }
 
+.navigation {
+  position: absolute;
+  top: 20px;
+}
+.button_home {
+  left: 20px;
+}
+.button_back {
+  left: 80px;
+}
 .navigation:active {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
 }
-.navigation:nth-child(1) img {
-  width: 40px;
-}
-.navigation:nth-child(2) img {
-  width: 31px;
-}
-.button_home {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  outline: none;
-}
-.button_back {
-  position: absolute;
-  top: 24px;
-  left: 80px;
-  outline: none;
-}
 
 .trick-page-wrap {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .trick-page-main {
-  color: white;
   text-align: center;
 }
 
+/* Color Themes */
+body.dark {
+  background-color: #1e2835;
+}
+body.dark .navigation .image_svg {
+  stroke: #fff;
+}
+body.dark .navigation:hover .image_svg {
+  stroke: #aaa;
+}
+body.dark .trick-page-main {
+  color: #fff;
+}
+
+body.light {
+  background-color: #fff;
+}
+body.light .navigation .image_svg {
+  stroke: #000;
+}
+body.light .navigation:hover .image_svg {
+  stroke: #999;
+}
+body.light .trick-page-main {
+  color: #000;
+}
