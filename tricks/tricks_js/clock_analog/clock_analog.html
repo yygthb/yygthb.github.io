@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../../img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles/reset.min.css">
+  <link rel="stylesheet" href="../../styles/trick-page.css">
+  <link rel="stylesheet" href="./clock_analog.css">
+  <title>Analog Clock</title>
+</head>
+
+<body class="dark">
+  
+  <div class="trick-page-wrap" id="home">
+    <!-- Navigation -->
+    <a href="../../index.html" class="navigation button_home" title="home">
+      <svg enable-background="new 0 0 512 512" height="40px" id="Layer_1" version="1.1" viewBox="143 143 227 227" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><polygon fill="none" points="   256,151.1 151.5,255.6 187.5,255.6 187.5,360.9 235.7,360.9 235.7,290.6 276.3,290.6 276.3,360.9 324.5,360.9 324.5,255.6    360.5,255.6  " stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="10" class="image_svg"/></g></svg>
+    </a>
+    <a href="../tricks_js.html" class="navigation button_back" title="back">
+      <svg enable-background="new 0 0 512 512" height="40px" id="Layer_1" version="1.1" viewBox="170 160 175 170" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="   M187,256c0,38.1,30.9,69,69,69s69-30.9,69-69s-30.9-69-69-69l16.8,33.3" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="10" class="image_svg"/><line fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="10" x1="256" x2="283.9" y1="187" y2="166.7" class="image_svg"/></g></svg>
+    </a>
+    <!-- / Navigation -->
+
+    <!-- Main -->
+    <main class="trick-page-main">
+      <div class="wrapper">
+        
+        <section class="clock">
+          <article class="hour">
+            <div class="hr" id="hr"></div>
+          </article>
+          <article class="min">
+            <div class="mn" id="mn"></div>
+          </article>
+          <article class="sec">
+            <div class="sc" id="sc"></div>
+          </article>
+        </section>
+
+      </div>
+    </main>
+    <!-- / Main -->
+  </div>
+
+  <script src="./clock_analog.js"></script>
+
+</body>
+
+</html>
