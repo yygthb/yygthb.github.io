@@ -1,3 +1,9 @@
+:root {
+  --card-header-background-color: #5f1fbe;
+  --card-background-color: #f8f5ff;
+  --card-hover-background-color: #eee3ff;
+}
+
 .wrapper {
   padding: 100px 15px;
 }
@@ -7,7 +13,7 @@
   top: 5px;
   left: 50%;
   transform: translate(-50%, 0);
-  color: #3f17803b;
+  color: #4f24943d;
   font-style: italic;
 }
 
@@ -24,8 +30,9 @@
   margin: 12px;
   margin-bottom: 40px;
   border-radius: 7px;
-  background-color: #9553ff13;
-  box-shadow: 0 0 10px 3px lightgrey;
+  background-color: var(--card-background-color);
+  box-shadow: 0 0 10px 3px #d3d3d3;
+  z-index: 55;
 }
 
 .cards__item_info {
@@ -33,6 +40,19 @@
   top: -30px;
   left: 7px;
   letter-spacing: 1.3px;
+}
+
+.cards__item::after {
+  display: block;
+  content: attr(data-num);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  font-weight: 700;
+  color: #e5d5ff;
+  z-index: 3;
 }
 
 .card {
@@ -43,10 +63,10 @@
 }
 
 .card__title {
-  background-color: #5f1fbe;
+  background-color: var(--card-header-background-color);
   border-radius: 7px 7px 0 0;
   padding: 15px 0;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1.5px;
@@ -54,10 +74,13 @@
 
 .card__info {
   flex-grow: 1;
+  border-radius: 0 0 7px 7px;
   padding: 10px;
   letter-spacing: 1px;
   line-height: 20px;
   text-align: start;
+  background-color: var(--card-background-color);
+  z-index: 10;
 }
 
 .hide {
@@ -65,5 +88,5 @@
 }
 
 .hover {
-  background-color: #752bec27;
+  background-color: var(--card-hover-background-color)
 }

@@ -9,12 +9,9 @@ a, a:active, a:focus {
   border: none;
   text-decoration: none;
   outline: 0;
-  /* -moz-outline-style: none; */
-  
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
 }
-
 
 /* Grids & Background */
 .wrap {
@@ -45,7 +42,6 @@ a, a:active, a:focus {
   position: relative;
 }
 /* / Grids & Background */
-
 
 /* Header */
 .header {
@@ -93,7 +89,6 @@ a, a:active, a:focus {
 }
 /* / Header */
 
-
 /* Main */
 .main {
   z-index: 10;
@@ -108,10 +103,10 @@ a, a:active, a:focus {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .card-wrap {
-  width: 49%;
+  width: 48%;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -162,7 +157,6 @@ a, a:active, a:focus {
   margin-top: 50px;
 }
 /* / Main */
-
 
 /* Footer */
 .footer {
