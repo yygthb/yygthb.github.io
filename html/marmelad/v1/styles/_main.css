@@ -41,6 +41,18 @@ body {
 
 
 /* Header */
+.section_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.section_header .content {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -57,7 +69,7 @@ body {
   margin-left: 20px;
 }
 .header_nav_link:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: var(--color-orange);
 }
 .header_contact {
@@ -79,6 +91,9 @@ body {
 
 
 /* Video */
+.section_video {
+  margin-top: 120px;
+}
 .video_wrapper {
   position: relative;
   width: 100%; 
@@ -161,6 +176,7 @@ body {
 .intro_content {
   position: relative;
   z-index: 5;
+  margin-left: -150px;
 }
 .intro_text {
   max-width: 550px;
@@ -290,7 +306,7 @@ body {
 .stage_card_item::before {
   padding-right:10px;
   color: var(--color-orange);
-  content: "⏺";
+  content: "✓";
 }
 
 /* /State */
@@ -346,12 +362,65 @@ body {
 
 /* Clients */
 .section_clients {
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 }
 .clients_title {
   margin-bottom: 50px;
 }
+.clients_wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.clients_logo_wrapper {
+  flex-basis: 15%;
+  margin-bottom: 10px;
+  align-self: center;
+  text-align: center;
+}
 .clients_logo {
-  width: 150px;
+  width: 120px;
+  align-self: center;
+}
+.clients_logo.sevenkids,
+.clients_logo.akashevo {
+  width: 100px;
+}
+.clients_logo.gazprom {
+  margin-bottom: 22px;
+}
+.clients_logo.trest {
+  margin-top: 20px;
+}
+.clients_logo.bud {
+  margin-top: 10px;
 }
 /* /Clients */
+
+/* Footer */
+.footer {
+  background-color: var(--color-card);
+}
+.footer_wrapper {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer_content {
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.footer_contacts, .footer_requisites {
+  line-height: 26px;
+}
+.footer_social_link:not(:last-child) {
+  margin-right: 15px;
+}
+/* /Footer */
