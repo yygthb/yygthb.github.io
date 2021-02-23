@@ -143,7 +143,7 @@ body {
   margin: 0 auto;
   padding: 10px;
   box-shadow: 0px -20px 30px 10px #000;
-
+  box-shadow: 0px -30px 25px 0px #000;
 }
 
 .section_main_background {
@@ -167,10 +167,10 @@ body {
 }
 
 .intro_title {
+  margin-bottom: 50px;
   font-size: 36px;
   font-weight: 400;
   margin-top: 20px;
-  margin-bottom: 50px;
 }
 .intro_content {
   position: relative;
@@ -189,34 +189,146 @@ body {
   letter-spacing: 1px;
 }
 
+.section {
+
+}
 .section_title {
   font-size: 26px;
   font-weight: 400;
   text-transform: uppercase;
+  letter-spacing: 1px;
   text-align: center;
   position: relative;
   z-index: 5;
+  margin-bottom: 70px;
 }
 
 .section_portfolio {
-  max-width: 500px;
-  text-align: center;
+  max-width: 1100px;
   margin: 0 auto;
+  margin-bottom: 150px;
+}
+.portfolio_wrapper_one {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 5fr 6fr 4fr;
+  grid-template-rows: repeat(2, 275px);
+  margin-bottom: 10px;
+}
+.portfolio_card {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio_card::after {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+  transition: all .5s;
+}
+.portfolio_card:hover::after {
+  opacity: 0;
+}
+.portfolio_bg {
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+}
+.portfolio_card:hover .portfolio_bg {
+  transform: scale(1.05);
+}
+.card_title_wrapper {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  z-index: 20;
+  bottom: 0
+}
+.card_title {
+  margin: 0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-orange);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card_one {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.portfolio_bg_one {
+  background-image: url('../media/offer/bg_adv.jpg');
+  background-position: 54% 50%;
+  background-size: cover;
+}
+.card_two {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.portfolio_bg_two {
+  background-image: url('../media/offer/bg_reputation.jpg');
+  background-position: 54% 50%;
+  background-size: cover;
+}
+.portfolio_bg_three {
+  background-image: url('../media/offer/bg_greeting.jpg');
+  background-position: 43% 50%;
+  background-size: cover;
+}
+.portfolio_bg_four {
+  background-image: url('../media/offer/bg_social2.jpg');
+  background-position: 23% 50%;
+  background-size: cover;
+}
+.portfolio_wrapper_two {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 300px;
+}
+.portfolio_bg_five {
+  background-image: url('../media/offer/bg_cameras.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.portfolio_bg_six {
+  background-image: url('../media/offer/bg_animation.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
 }
 /* /Main */
 
 /* Benefits */
 .section_benefits {
-  margin-bottom: 150px;
+  margin-bottom: 180px;
+}
+.section_benefits .content {
+  position: relative;
+}
+.soffit {
+  position: absolute;
+  top: -110px;
+  right: 0;
+  z-index: 2;
+  opacity: 0.8;
 }
 .benefits_title {
-  margin-bottom: 50px;
 }
 .benefits_wrapper {
   max-width: 900px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 .benefit_item {
   flex-basis: 19%;
@@ -258,10 +370,9 @@ body {
 
 /* State */
 .section_stage {
-  margin-bottom: 150px;
+  margin-bottom: 180px;
 }
 .state_title {
-  margin-bottom: 50px;
 }
 .stage_wrapper {
   display: flex;
@@ -314,14 +425,28 @@ body {
 .section_result {
   margin-bottom: 150px;
 }
+.section_result .content {
+  position: relative;
+}
+.lens {
+  position: absolute;
+  z-index: 2;
+  top: -175px;
+  left: 0;
+  width: 500px;
+  opacity: 0.6;
+}
 .result_title {
-  margin-bottom: 50px;
+  position: relative;
+  z-index: 10;
 }
 .result_wrapper {
   display: flex;
   max-width: 800px;
   margin: 0 auto;
   justify-content: space-between;
+  position: relative;
+  z-index: 10;
 }
 .result_card {
   flex-basis: 32%;
@@ -361,10 +486,20 @@ body {
 
 /* Clients */
 .section_clients {
-  margin-bottom: 50px;
+  margin-bottom: 80px;
+}
+.section_clients .content {
+  position: relative;
+}
+.dron {
+  position: absolute;
+  bottom: -85px;
+  right: 0;
+  z-index: 2;
+  width: 700px;
+  opacity: .5;
 }
 .clients_title {
-  margin-bottom: 50px;
 }
 .clients_wrapper {
   max-width: 900px;
@@ -372,6 +507,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  position: relative;
+  z-index: 10;
 }
 .clients_logo_wrapper {
   flex-basis: 15%;
@@ -400,7 +537,9 @@ body {
 
 /* Footer */
 .footer {
+  position: relative;
   background-color: var(--color-card);
+  z-index: 20;
 }
 .footer_wrapper {
   height: 200px;
