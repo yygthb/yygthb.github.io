@@ -3,13 +3,12 @@ const cardTwo = document.querySelector(".card_two");
 const portFolioCard = document.querySelectorAll(".portfolio_card");
 const modal = document.querySelector(".modal");
 const buttonModalClose = document.querySelector(".modal_button-close");
-const sliderDescription = document.querySelector(".slider_description-content");
 
 const stopVideos = () => {
     var videos = document.querySelectorAll("iframe, video");
     Array.prototype.forEach.call(videos, (video) => {
         if (video.tagName.toLowerCase() === "video") {
-            video.pause();
+            // video.pause();
         } else {
             var src = video.src;
             video.src = src;
