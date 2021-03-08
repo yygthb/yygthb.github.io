@@ -8,8 +8,10 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Видеопрезентации, анимация, видеореклама, презентационные фильмы, рекламные сценарии — это то, во что мы вкладываем оригинальные креативные идеи. Студия видеорекламы «MARMELADOV» email: contact@marmeladov.net">
@@ -23,301 +25,601 @@
 </head>
 <body>
 
-  <div class="section_header">
-    <div class="content">
-      <header class=" header">
-        <div class="header_logo">
-          <a href="#">
-            <img src="./media/logo.webp" alt="marmeladov logo">
-          </a>
-        </div>
-        <div class="header_menu">
-          <div class="header_nav">
-            <a class="header_nav_link" href="#">Виды работ</a>
-            <a class="header_nav_link" href="#">О нас</a>
-            <a class="header_nav_link" href="#">Портфолио</a>
-            <a class="header_nav_link" href="#">Контакты</a>
+  <div class="wrapper">
+    <header class="section_header lock-padding">
+      <div class="content">
+        <header class=" header">
+          <div class="header_logo">
+            <a href="#">
+              <img src="./media/logo.webp" alt="marmeladov logo">
+            </a>
           </div>
-          <div class="header_contact">
-            <a class="header_contact_phone" href="#">+7 (917) 705 78 80</a>
-            <div class="header_contact_social">
-              <a target="blank" href="https://vk.com/marmeladov_net" class="header_social_link">
+          <div class="header_menu">
+            <div class="header_nav">
+              <a class="header_nav_link" href="#">Виды работ</a>
+              <a class="header_nav_link" href="#">О нас</a>
+              <a class="header_nav_link" href="#">Портфолио</a>
+              <a class="header_nav_link" href="#">Контакты</a>
+            </div>
+            <div class="header_contact">
+              <a class="header_contact_phone" href="#">+7 (917) 705 78 80</a>
+              <div class="header_contact_social">
+                <a target="blank" href="https://vk.com/marmeladov_net" class="header_social_link">
+                  <img class="header_social_img" src="./media//header_social/vk.svg" alt="">
+                </a>
+                <a target="blank" href="https://vimeo.com/marmeladov" class="header_social_link">
+                  <img class="header_social_img" src="./media/header_social/vimeo.svg" alt="">
+                </a>
+                <a target="blank" href="https://www.instagram.com/marmeladovstudio/" class="header_social_link">
+                  <img class="header_social_img" src="./media/header_social/instagram.svg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </header>
+  
+    <section class="section_video">
+      <div class="video_wrapper">
+        <video class="video" autoplay muted loop>
+          <source src="./media/video_old.mp4"> 
+          <!-- <source src="./media/video_intro1.mp4">  -->
+        </video>
+        <div class="video_overflow">
+          <div class="content">
+            <div class="video_content">
+              <h1 class="video_title">Вы создаете <span class="text_colored">свое будущее</span></h1>
+              <p class="video_subtitle">Мы пишем <span class="text_colored">вашу историю</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="section_main">
+      <div class="content">
+        <div class="section_main_background">
+          <div class="intro_content">
+            <h1 class="intro_title">Студия видеорекламы <span class="text_colored">MARMELADOV</span> </h1>
+            <div class="intro_text">
+              <p class="text_row">Это продакшн полного цикла.</p>
+              <p class="text_row">Наша творческая команда более 12 лет <span class="text_colored">успешно</span> работает над проектами разной сложности. <br> Мы постоянно учимся, экспериментируем, развиваемся, чтобы добиваться <span class="text_colored">лучших результатов</span></p>
+              <p class="text_row">Мы <span class="text_colored">любим</span> свою работу ;)</p>
+            </div>
+            <button class="button button_colored button_order popup_open">заказать видеоролик</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="section_portfolio">
+      <div class="content">
+        <h3 class="section_title offer_title">Что мы предложим вашему бизнесу</h3>
+        <div class="grid_container portfolio_wrapper_one">
+          <div data-slider="0" class="portfolio_card card_one">
+            <div class="card_title_wrapper">
+              <h6 class="card_title">Рекламный ролик</h6>
+            </div>
+            <div class="portfolio_bg portfolio_bg_one"></div>
+          </div>
+          <div data-slider="1" class="portfolio_card card_two">
+            <div class="card_title_wrapper">
+              <h6 class="card_title">Имиджевый ролик</h6>
+            </div>
+            <div class="portfolio_bg portfolio_bg_two"></div>
+          </div>
+          <div data-slider="2" class="portfolio_card card_three">
+            <div class="card_title_wrapper">
+              <h6 class="card_title">Ролик-видеозаставка</h6>
+            </div>
+            <div class="portfolio_bg portfolio_bg_three"></div>
+          </div>
+          <div data-slider="3" class="portfolio_card card_four">
+            <div class="card_title_wrapper">
+              <h6 class="card_title">Социальный ролик</h6>
+            </div>
+            <div class="portfolio_bg portfolio_bg_four"></div>
+          </div>
+        </div>
+        <div class="portfolio_wrapper_two">
+          <div data-slider="4" class="portfolio_card card_five">
+            <div class="card_title_wrapper">
+              <h6 class="card_title">Многокамерная съемка мероприятия</h6>
+            </div>
+            <div class="portfolio_bg portfolio_bg_five"></div>
+          </div>
+          <div data-slider="5" class="portfolio_card card_six">
+            <div class="card_title_wrapper">
+              <h6 class="card_title">Анимационный ролик</h6>
+            </div>
+            <div class="portfolio_bg portfolio_bg_six"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="section_benefits">
+      <div class="content">
+        <h3 class="section_title benefits_title">Видеореклама позволяет достичь следующих целей</h3>
+        <div class="benefits_wrapper">
+          <div class="benefit_item">
+            <div class="benefit_image_wrapper">
+              <img src="./media/benefits/presentation.svg" alt="" class="benefit_img presentation">
+            </div>
+            <h5 class="benefit_title presentation">РАССКАЖЕТ О ВАШЕМ ПРОДУКТЕ</h5>
+          </div>
+          <div class="benefit_item">
+            <div class="benefit_image_wrapper">
+              <img src="./media/benefits/recognition.svg" alt="" class="benefit_img recognition">
+            </div>
+            <h5 class="benefit_title recognition">ПОВЫСИТ УЗНАВАЕМОСТЬ КОМПАНИИ</h5>
+          </div>
+          <div class="benefit_item">
+            <div class="benefit_image_wrapper">
+              <img src="./media/benefits/trust.svg" alt="" class="benefit_img trust">
+            </div>
+            <h5 class="benefit_title trust">УВЕЛИЧИТ ДОВЕРИЕ К ВАШЕЙ КОМПАНИИ</h5>
+          </div>
+          <div class="benefit_item">
+            <div class="benefit_image_wrapper">
+              <img src="./media/benefits/info.svg" alt="" class="benefit_img info">
+            </div>
+            <h5 class="benefit_title info">СДЕЛАЕТ СЛОЖНУЮ ИНФОРМАЦИЮ ПОНЯТНОЙ</h5>
+          </div>
+          <div class="benefit_item">
+            <div class="benefit_image_wrapper">
+              <img src="./media/benefits/profit.svg" alt="" class="benefit_img profit">
+            </div>
+            <h5 class="benefit_title profit">УВЕЛИЧИТ ПРОДАЖИ И ПРИБЫЛЬ</h5>
+          </div>
+        </div>
+        <img src="./media/image_prod.webp" alt="" class="background_image soffit">
+      </div>
+    </section>
+  
+    <section class="section_stage">
+      <div class="content">
+        <h3 class="section_title state_title">ЭТАПЫ РАБОТ ПРИ СОЗДАНИИ ВИДЕОРОЛИка</h3>
+  
+        <div class="stage_wrapper">
+          <div class="stage_card">
+            <h5 class="stage_card_title">Препродакшн</h5>
+            <ul class="stage_card_list">
+              <li class="stage_card_item">идея</li>
+              <li class="stage_card_item">сценарий</li>
+              <li class="stage_card_item">подбор декораций</li>
+              <li class="stage_card_item">поиск локаций</li>
+              <li class="stage_card_item">подбор актеров</li>
+              <li class="stage_card_item">раскадровка</li>
+            </ul>
+            <img src="./media/next.svg" alt="" class="stage_next_logo">
+          </div>
+          <div class="stage_card">
+            <h5 class="stage_card_title">Продакшн</h5>
+            <ul class="stage_card_list">
+              <li class="stage_card_item">грим</li>
+              <li class="stage_card_item">свет</li>
+              <li class="stage_card_item">декорации</li>
+              <li class="stage_card_item">звук</li>
+              <li class="stage_card_item">режиссура</li>
+              <li class="stage_card_item">съемка</li>
+            </ul>
+            <img src="./media/next.svg" alt="" class="stage_next_logo">
+          </div>
+          <div class="stage_card">
+            <h5 class="stage_card_title">Постпродакшн</h5>
+            <ul class="stage_card_list">
+              <li class="stage_card_item">монтаж</li>
+              <li class="stage_card_item">графические решения</li>
+              <li class="stage_card_item">работа со звуком</li>
+              <li class="stage_card_item">композитинг</li>
+              <li class="stage_card_item">цветокоррекция</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="section_result">
+      <div class="content">
+        <h3 class="section_title result_title">ЧТО ВЫ ПОЛУЧИТЕ ПО ОКОНЧАНИИ РАБОТ</h3>
+        <div class="result_wrapper">
+          <div class="result_card">
+            <div class="result_image_wrapper">
+              <img src="./media/result/video.svg" alt="" class="result_img video">
+            </div>
+            <h5 class="result_card_title video"><span class="text_colored">Видеоролик,</span> адаптированный под социальные сети</h5>
+          </div>
+          <div class="result_card">
+            <div class="result_image_wrapper">
+              <img src="./media/result/checklist.svg" alt="" class="result_img checklist">
+              <img src="./media/result/pencil.svg" alt="" class="result_img pencil">
+            </div>
+            <h5 class="result_card_title checklist">Подробный <span class="text_colored">чек-лист</span> по продвижению видео на YouTube</h5>
+          </div>
+          <div class="result_card">
+            <div class="result_image_wrapper">
+              <img src="./media/result/instruction.svg" alt="" class="result_img instruction">
+              <img src="./media/result/top.svg" alt="" class="result_img top">
+            </div>
+            <h5 class="result_card_title instruction"><span class="text_colored">Инструкцию</span> по настройке рекламной кампании в Instagram</h5>
+          </div>
+        </div>
+        <img src="./media/image_lens.webp" alt="" class="background_image lens">
+      </div>
+    </section>
+  
+    <section class="section_clients">
+      <div class="content">
+        <h3 class="section_title clients_title">НАШИ КЛИЕНТЫ</h3>
+        <div class="clients_wrapper">
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/ISpring_Logo_white.png" alt="" class="clients_logo ispring">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/CocaCola_logo.png" alt="" class="clients_logo cola">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/mastercard.png" alt="" class="clients_logo mastercard">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/mobile.png" alt="" class="clients_logo mobile">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/colgate.png" alt="" class="clients_logo colgate">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/cds.svg" alt="" class="clients_logo cds">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/sevenkids.png" alt="" class="clients_logo sevenkids">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/tatneft.svg" alt="" class="clients_logo tatneft">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/gazprom.svg" alt="" class="clients_logo gazprom">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/trest.svg" alt="" class="clients_logo trest">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/bud.png" alt="" class="clients_logo bud">
+          </div>
+          <div class="clients_logo_wrapper">
+            <img src="./media/partners/akashevo.svg" alt="" class="clients_logo akashevo">
+          </div>
+        </div>
+        <img src="./media/dron.webp" alt="" class="background_image dron">
+      </div>
+    </section>
+  
+    <footer class="footer">
+      <div class="content">
+        <div class="footer_wrapper">
+          <div class="footer_content">
+            <img src="./media/logo.webp" alt="" class="footer_logo">
+            <div class="footer_contacts">
+              <p>+7 (917) 705 78 80</p>
+              <p>contact@marmeladov.net</p>
+            </div>
+            <div class="footer_requisites">
+              <p>ИНН 121522826565</p>
+              <p>ОГРНИП 317121500011887</p>
+            </div>
+            <div class="footer_social">
+              <a target="blank" href="https://vk.com/marmeladov_net" class="footer_social_link">
                 <img class="header_social_img" src="./media//header_social/vk.svg" alt="">
               </a>
-              <a target="blank" href="https://vimeo.com/marmeladov" class="header_social_link">
+              <a target="blank" href="https://vimeo.com/marmeladov" class="footer_social_link">
                 <img class="header_social_img" src="./media/header_social/vimeo.svg" alt="">
               </a>
-              <a target="blank" href="https://www.instagram.com/marmeladovstudio/" class="header_social_link">
+              <a target="blank" href="https://www.instagram.com/marmeladovstudio/" class="footer_social_link">
                 <img class="header_social_img" src="./media/header_social/instagram.svg" alt="">
               </a>
             </div>
           </div>
-        </div>
-      </header>
-    </div>
-  </div>
-
-  <div class="section_video">
-    <div class="video_wrapper">
-      <video class="video" autoplay muted loop>
-        <source src="./media/video_old.mp4"> 
-        <!-- <source src="./media/video_intro1.mp4">  -->
-      </video>
-      <div class="video_overflow">
-        <div class="content">
-          <div class="video_content">
-            <h1 class="video_title">Вы создаете <span class="text_colored">свое будущее</span></h1>
-            <p class="video_subtitle">Мы пишем <span class="text_colored">вашу историю</span></p>
-          </div>
+          <div class="footer_production">© MARMELADOV video producion 2021</div>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
 
-  <div class="section_main">
-    <div class="section_main_background">
-      <div class="intro_content">
-        <h1 class="intro_title">Студия видеорекламы <span class="text_colored">MARMELADOV</span> </h1>
-        <div class="intro_text">
-          <p class="text_row">Это продакшн полного цикла.</p>
-          <p class="text_row">Наша творческая команда более 12 лет <span class="text_colored">успешно</span> работает над проектами разной сложности. <br> Мы постоянно учимся, экспериментируем, развиваемся, чтобы добиваться <span class="text_colored">лучших результатов</span></p>
-          <p class="text_row">Мы <span class="text_colored">любим</span> свою работу ;)</p>
-        </div>
+  <div class="popup">
+    <div class="popup_body popup-close">
+      <div class="popup_content">
+        <div class="button popup_button-close popup-close">+</div>
+        <h3 class="section_title popup_title">сделайте заявку</h3>
+        <div class="popup_subtitle">получите чек-лист по продвижению бесплатно</div>
+        <form class="popup_form">
+          <input type="text" placeholder="Имя" class="form_input popup_input-name">
+          <input type="text" placeholder="Телефон" class="form_input popup_input-phone">
+          <input type="email" placeholder="E-mail" class="form_input popup_inupt-email">
+          <button class="button button_colored popup_button-send">Отправить</button>
+        </form>
       </div>
     </div>
   </div>
 
-  <div class="section_portfolio">
-    <div class="content">
-      <h3 class="section_title offer_title">Что мы предложим вашему бизнесу</h3>
-      <div class="grid_container portfolio_wrapper_one">
-        <div class="portfolio_card card_one">
-          <div class="card_title_wrapper">
-            <h6 class="card_title">Рекламный ролик</h6>
+  <div class="modal">
+      <div class="modal_body">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div data-hash="slide-1" class="swiper-slide swiper-slide-one">
+              <div class="slider_block">
+                <div class="slider_wrapper">
+                  <div class="slider_wrapper-video">
+                    V I D E O
+                  </div>
+                  <div class="slider_wrapper-description">
+                    <h4 class="slider_description-title card_title">Рекламный ролик</h4>
+                    <div class="slider_description-content">
+                      <p class="slider_description-text">
+                        Цель - продажа продукта. Внимание акцентируется на преимуществах товара и выгодах для потребителя.
+                      </p>
+                      <p class="slider_description-text">
+                        iSpring Learn
+                      </p>
+                      <p class="slider_description-text">
+                        Результатом очередного сотрудничества с компанией iSpring стал видеоролик о платформе для корпоративного обучения № 1 в России iSpring Learn. Здесь совместно работали команда дизайнеров, талантливая съемочная группа и замечательная топ-модель Татьяна Козуто, порадовавшая своим профессиональным подходом во время съемок. Для озвучки ролика мы наняли англоязычного диктора – носителя языка.
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <p class="slider_description-text">
+                        Another collaboration with the iSpring comapny resulted in a video about the iSpring Learn, #1 corporate learning platform in Russia. The team of designers, the talented film crew and a wonderful top model Tatyana Kozuto, who showed her professional approach during the shooting, worked all together as one. In order to voiceover this video, we hired a professional voiceover artist – a native English speaker.
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <div class="slider_description-authors">
+                        <p class="slider-author">
+                          Production: MARMELADOV studio
+                        </p>
+                        <p class="slider-author">
+                          Directed by Alexey Sannikov, Irina Chumanova
+                        </p>
+                        <p class="slider-author">
+                          Script: Irina Chumanova
+                        </p>
+                        <p class="slider-author">
+                          Camera: Andrey Golubev
+                        </p>
+                        <p class="slider-author">
+                          Cast: Tatyana Kozuto
+                        </p>
+                        <p class="slider-author">
+                          Edit / VFX: Alexey Sannikov, Maxim Shcherbinin, Nikolay Norkin
+                        </p>
+                        <p class="slider-author">
+                          Dictor: Greg Johnson
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-hash="slide-2" class="swiper-slide swiper-slide-one">
+              <div class="slider_block">
+                <div class="slider_wrapper">
+                  <div class="slider_wrapper-video">
+                    V I D E O
+                  </div>
+                  <div class="slider_wrapper-description">
+                    <h4 class="slider_description-title card_title">Имиджевый ролик</h4>
+                    <div class="slider_description-content">
+                      <p class="slider_description-text">
+                        Показывает деятельность компании, закрепляет бренд в памяти потребителей и формирует доверие к бренду. 
+                      </p>
+                      <p class="slider_description-text">
+                        Птицефабрика Акашево: два месяца съёмок, постпродакшена и бессонных ночей = 50 секундное видео )
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <div class="slider_description-authors">
+                        <p class="slider-author">
+                          Продакшн: студия «MARMELADOV»
+                        </p>
+                        <p class="slider-author">
+                          Режиссер: Алексей Санников
+                        </p>
+                        <p class="slider-author">
+                          Сценарий: Татьяна Титова
+                        </p>
+                        <p class="slider-author">
+                          Операторы: Андрей Голубев, Алексей Санников
+                        </p>
+                        <p class="slider-author">
+                          Монтаж / Графика / Звук: Алексей Санников, Максим Щербинин, Юлия Тогузова
+                        </p>
+                        <p class="slider-author">
+                          Диктор: Максим Калесников
+                        </p>
+                        <p class="slider-author">
+                          Водитель: Аня Онучина
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-hash="slide-3" class="swiper-slide swiper-slide-one">
+              <div class="slider_block">
+                <div class="slider_wrapper">
+                  <div class="slider_wrapper-video">
+                    V I D E O
+                  </div>
+                  <div class="slider_wrapper-description">
+                    <h4 class="slider_description-title card_title">Ролик-видеозаставка</h4>
+                    <div class="slider_description-content">
+                      <p class="slider_description-text">
+                        Это короткий эффектный ролик. Показывается отдельно или в начале фирменного видеоролика.
+                      </p>
+                      <p class="slider_description-text">
+                        Заставка к фильму об одном из крупнейших предприятий России – Заводе полупроводниковых приборов.<br/>В заставке визуализирована ключевая продукция на протяжении всей истории существования завода.
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <p class="slider_description-text">
+                        Intro video for a film about one of the largest enterprises in Russia – a factory of semiconductor devices.<br/>The intro video visualizes key products throughout all the plant's history.
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <div class="slider_description-authors">
+                        <p class="slider-author">
+                          Edit / VFX: Alexey Sannikov
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div data-hash="slide-4" class="swiper-slide swiper-slide-one">
+              <div class="slider_block">
+                <div class="slider_wrapper">
+                  <div class="slider_wrapper-video">
+                    V I D E O
+                  </div>
+                  <div class="slider_wrapper-description">
+                    <h4 class="slider_description-title card_title">Социальный ролик</h4>
+                    <div class="slider_description-content">
+                      <p class="slider_description-text">
+                        Социальная реклама, привлекающая внимание общественности к проблеме.
+                      </p>
+                      <p class="slider_description-text">
+                        От компании «Газпром» к нам поступил запрос на изготовление социальной рекламы об опасности угарного газа. Хорошо поработав над сценарием, мы нарисовали обучающий мультипликационный ролик, для того чтобы важная для каждого информация стала простой и понятной.
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <p class="slider_description-text">
+                        We received a request from Gazprom to produce social advertising about the dangers of carbon monoxide. We have thoroughly worked on the script and as the result drew an animated explainer video to make the important information simple and clear for everyone.
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <div class="slider_description-authors">
+                        <p class="slider-author">
+                          Production: MARMELADOV studio
+                        </p>
+                        <p class="slider-author">
+                          Script: Alexey Sannikov
+                        </p>
+                        <p class="slider-author">
+                          Edit / VFX: Maksim Shcherbinin
+                        </p>
+                        <p class="slider-author">
+                          Dictor: Denis Garmash 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-hash="slide-5" class="swiper-slide swiper-slide-one">
+              <div class="slider_block">
+                <div class="slider_wrapper">
+                  <div class="slider_wrapper-video">
+                    V I D E O
+                  </div>
+                  <div class="slider_wrapper-description">
+                    <h4 class="slider_description-title card_title">Многокамерная съемка</h4>
+                    <div class="slider_description-content">
+                      <p class="slider_description-text">
+                        Проводите важное большое мероприятие, форум или выставку? Хотите, чтобы об этом узнало как можно болше людей? Мы поможем осветить все моменты Вашего мероприятия: выступления спикеров, воркшопы, мастерклассы, пленарные заседания. Нашей команде под силу организовать многокамерную видео и фотосъемку любого мероприятия. Из полученного материалы в короткие сроки мы готовы подготовить графически упакованные выступления спикеров, отчетные ролики, анонсы следующих мероприятий и адаптировать все это под формат социальных сетей.
+                      </p>
+                      <p class="slider_description-text">
+                        SMART E Construction Management Forum
+                      </p>
+                      <p class="slider_description-text">
+                        Осенью команда MARMELADOV Production была приглашена для сьемки Первого отраслевого Форума в России «Управление и контроль строительства», в котором приняло участие более 300 строительных компаний. Организатор форума – компания SMART ENGINEERS - одна из крупнейших компаний на российском рынке услуг строительного консалтинга. Наша команда в составе 10 человек в течение всего дня не сводили объективов с почетных гостей, спикеров и участников мероприятия. На основе отснятого материала мы подготовили видеовыступления всех презентаций, ролик с отзывами о Форуме и крутой отчетный ролик.
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <p class="slider_description-text">
+                        This autumn, the MARMELADOV Production team was invited to film the First “Construction Management and Control,” Russian Industrial Forum, which gained more than 300 construction companies to participate. SMART ENGINEERS, the forum’s founder, is one of the largest companies in the Russian market of construction consulting services. Our team of 10 people did not take their camera lenses off from guests of honor, speakers and participants of the event throughout the day. Using tons of video footage, we have made the videos of all the speakers’ presentations, Forum guests’ reviews and a cool after movie.
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <div class="slider_description-authors">
+                        <p class="slider-author">
+                          Production: MARMELADOV studio
+                        </p>
+                        <p class="slider-author">
+                          Directed by Alexey Sannikov
+                        </p>
+                        <p class="slider-author">
+                          Camera: Alexandr Romanov, Andrey Golubev, Alexey Polushin, Maxim Shcherbini
+                        </p>
+                        <p class="slider-author">
+                          Photography: Denis Balyshev, Alexey Marinin 
+                        </p>
+                        <p class="slider-author">
+                          Edit / VFX: Alexey Sannikov, Maxim Shcherbinin
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div data-hash="slide-6" class="swiper-slide swiper-slide-one">
+              <div class="slider_block">
+                <div class="slider_wrapper">
+                  <div class="slider_wrapper-video">
+                    V I D E O
+                  </div>
+                  <div class="slider_wrapper-description">
+                    <h4 class="slider_description-title card_title">Анимационный ролик</h4>
+                    <div class="slider_description-content">
+                      <p class="slider_description-text">
+                        Доносит до зрителей информацию с помощью инфографики или анимированных персонажей.
+                      </p>
+                      <p class="slider_description-text">
+                        SEVEN KIDS
+                      </p>
+                      <p class="slider_description-text">
+                        Для международной сети центров развития интеллекта «Seven Kids» мы создали рисованный видеоролик – doodle-видео. Все иллюстрации мы рисовали вручную, и постарались сделать его понятным и веселым. Для нас это был первый опыт doodle-видео, и мы (как и наш клиент) остались довольны результатом :)
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <p class="slider_description-text">
+                        We created a hand-drawn doodle video for "Seven Kids", the international network of intelligence development centers. All the illustrations we drew by hand and tried to make it all clear and fun. This was our first doodle video experience and we (as far as our client) are satisfied with the result :)
+                      </p>
+                      <span class="slider_description-break"></span>
+                      <div class="slider_description-authors">
+                        <p class="slider-author">
+                          Production: MARMELADOV studio
+                        </p>
+                        <p class="slider-author">
+                          Directed by / Script: Alexey Sannikov
+                        </p>
+                        <p class="slider-author">
+                          Edit / VFX: Julia Toguzova, Maksim Shcherbinin
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="portfolio_bg portfolio_bg_one"></div>
-        </div>
-        <div class="portfolio_card card_two">
-          <div class="card_title_wrapper">
-            <h6 class="card_title">Имиджевый ролик</h6>
-          </div>
-          <div class="portfolio_bg portfolio_bg_two"></div>
-        </div>
-        <div class="portfolio_card card_three">
-          <div class="card_title_wrapper">
-            <h6 class="card_title">Ролик-видеозаставка</h6>
-          </div>
-          <div class="portfolio_bg portfolio_bg_three"></div>
-        </div>
-        <div class="portfolio_card card_four">
-          <div class="card_title_wrapper">
-            <h6 class="card_title">Социальный ролик</h6>
-          </div>
-          <div class="portfolio_bg portfolio_bg_four"></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
         </div>
       </div>
-      <div class="portfolio_wrapper_two">
-        <div class="portfolio_card card_five">
-          <div class="card_title_wrapper">
-            <h6 class="card_title">Многокамерная съемка мероприятия</h6>
-          </div>
-          <div class="portfolio_bg portfolio_bg_five"></div>
-        </div>
-        <div class="portfolio_card card_six">
-          <div class="card_title_wrapper">
-            <h6 class="card_title">Анимационный ролик</h6>
-          </div>
-          <div class="portfolio_bg portfolio_bg_six"></div>
-        </div>
-      </div>
-    </div>
+      <div class="button modal_button-close modal-close">+</div>
   </div>
-
-  <div class="section_benefits">
-    <div class="content">
-      <h3 class="section_title benefits_title">Видеореклама позволяет достичь следующих целей</h3>
-      <div class="benefits_wrapper">
-        <div class="benefit_item">
-          <div class="benefit_image_wrapper">
-            <img src="./media/benefits/presentation.svg" alt="" class="benefit_img presentation">
-          </div>
-          <h5 class="benefit_title presentation">РАССКАЖЕТ О ВАШЕМ ПРОДУКТЕ</h5>
-        </div>
-        <div class="benefit_item">
-          <div class="benefit_image_wrapper">
-            <img src="./media/benefits/recognition.svg" alt="" class="benefit_img recognition">
-          </div>
-          <h5 class="benefit_title recognition">ПОВЫСИТ УЗНАВАЕМОСТЬ КОМПАНИИ</h5>
-        </div>
-        <div class="benefit_item">
-          <div class="benefit_image_wrapper">
-            <img src="./media/benefits/trust.svg" alt="" class="benefit_img trust">
-          </div>
-          <h5 class="benefit_title trust">УВЕЛИЧИТ ДОВЕРИЕ К ВАШЕЙ КОМПАНИИ</h5>
-        </div>
-        <div class="benefit_item">
-          <div class="benefit_image_wrapper">
-            <img src="./media/benefits/info.svg" alt="" class="benefit_img info">
-          </div>
-          <h5 class="benefit_title info">СДЕЛАЕТ СЛОЖНУЮ ИНФОРМАЦИЮ ПОНЯТНОЙ</h5>
-        </div>
-        <div class="benefit_item">
-          <div class="benefit_image_wrapper">
-            <img src="./media/benefits/profit.svg" alt="" class="benefit_img profit">
-          </div>
-          <h5 class="benefit_title profit">УВЕЛИЧИТ ПРОДАЖИ И ПРИБЫЛЬ</h5>
-        </div>
-      </div>
-      <img src="./media/image_prod.webp" alt="" class="background_image soffit">
-    </div>
-  </div>
-
-  <div class="section_stage">
-    <div class="content">
-      <h3 class="section_title state_title">ЭТАПЫ РАБОТ ПРИ СОЗДАНИИ ВИДЕОРОЛИка</h3>
-
-      <div class="stage_wrapper">
-        <div class="stage_card">
-          <h5 class="stage_card_title">Препродакшн</h5>
-          <ul class="stage_card_list">
-            <li class="stage_card_item">идея</li>
-            <li class="stage_card_item">сценарий</li>
-            <li class="stage_card_item">подбор декораций</li>
-            <li class="stage_card_item">поиск локаций</li>
-            <li class="stage_card_item">подбор актеров</li>
-            <li class="stage_card_item">раскадровка</li>
-          </ul>
-          <img src="./media/next.svg" alt="" class="stage_next_logo">
-        </div>
-        <div class="stage_card">
-          <h5 class="stage_card_title">Продакшн</h5>
-          <ul class="stage_card_list">
-            <li class="stage_card_item">грим</li>
-            <li class="stage_card_item">свет</li>
-            <li class="stage_card_item">декорации</li>
-            <li class="stage_card_item">звук</li>
-            <li class="stage_card_item">режиссура</li>
-            <li class="stage_card_item">съемка</li>
-          </ul>
-          <img src="./media/next.svg" alt="" class="stage_next_logo">
-        </div>
-        <div class="stage_card">
-          <h5 class="stage_card_title">Постпродакшн</h5>
-          <ul class="stage_card_list">
-            <li class="stage_card_item">монтаж</li>
-            <li class="stage_card_item">графические решения</li>
-            <li class="stage_card_item">работа со звуком</li>
-            <li class="stage_card_item">композитинг</li>
-            <li class="stage_card_item">цветокоррекция</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section_result">
-    <div class="content">
-      <h3 class="section_title result_title">ЧТО ВЫ ПОЛУЧИТЕ ПО ОКОНЧАНИИ РАБОТ</h3>
-      <div class="result_wrapper">
-        <div class="result_card">
-          <div class="result_image_wrapper">
-            <img src="./media/result/video.svg" alt="" class="result_img video">
-          </div>
-          <h5 class="result_card_title video"><span class="text_colored">Видеоролик,</span> адаптированный под социальные сети</h5>
-        </div>
-        <div class="result_card">
-          <div class="result_image_wrapper">
-            <img src="./media/result/checklist.svg" alt="" class="result_img checklist">
-            <img src="./media/result/pencil.svg" alt="" class="result_img pencil">
-          </div>
-          <h5 class="result_card_title checklist">Подробный <span class="text_colored">чек-лист</span> по продвижению видео на YouTube</h5>
-        </div>
-        <div class="result_card">
-          <div class="result_image_wrapper">
-            <img src="./media/result/instruction.svg" alt="" class="result_img instruction">
-            <img src="./media/result/top.svg" alt="" class="result_img top">
-          </div>
-          <h5 class="result_card_title instruction"><span class="text_colored">Инструкцию</span> по настройке рекламной кампании в Instagram</h5>
-        </div>
-      </div>
-      <img src="./media/image_lens.webp" alt="" class="background_image lens">
-    </div>
-  </div>
-
-  <div class="section_clients">
-    <div class="content">
-      <h3 class="section_title clients_title">НАШИ КЛИЕНТЫ</h3>
-      <div class="clients_wrapper">
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/ISpring_Logo_white.png" alt="" class="clients_logo ispring">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/CocaCola_logo.png" alt="" class="clients_logo cola">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/mastercard.png" alt="" class="clients_logo mastercard">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/mobile.png" alt="" class="clients_logo mobile">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/colgate.png" alt="" class="clients_logo colgate">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/cds.svg" alt="" class="clients_logo cds">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/sevenkids.png" alt="" class="clients_logo sevenkids">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/tatneft.svg" alt="" class="clients_logo tatneft">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/gazprom.svg" alt="" class="clients_logo gazprom">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/trest.svg" alt="" class="clients_logo trest">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/bud.png" alt="" class="clients_logo bud">
-        </div>
-        <div class="clients_logo_wrapper">
-          <img src="./media/partners/akashevo.svg" alt="" class="clients_logo akashevo">
-        </div>
-      </div>
-      <img src="./media/dron.webp" alt="" class="background_image dron">
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="content">
-      <div class="footer_wrapper">
-        <div class="footer_content">
-          <img src="./media/logo.webp" alt="" class="footer_logo">
-          <div class="footer_contacts">
-            <p>+7 (917) 705 78 80</p>
-            <p>contact@marmeladov.net</p>
-          </div>
-          <div class="footer_requisites">
-            <p>ИНН 121522826565</p>
-            <p>ОГРНИП 317121500011887</p>
-          </div>
-          <div class="footer_social">
-            <a target="blank" href="https://vk.com/marmeladov_net" class="footer_social_link">
-              <img class="header_social_img" src="./media//header_social/vk.svg" alt="">
-            </a>
-            <a target="blank" href="https://vimeo.com/marmeladov" class="footer_social_link">
-              <img class="header_social_img" src="./media/header_social/vimeo.svg" alt="">
-            </a>
-            <a target="blank" href="https://www.instagram.com/marmeladovstudio/" class="footer_social_link">
-              <img class="header_social_img" src="./media/header_social/instagram.svg" alt="">
-            </a>
-          </div>
-        </div>
-        <div class="footer_production">© MARMELADOV video producion 2020</div>
-      </div>
-    </div>
-  </footer>
   
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="./scripts/swiper-bundle.min.js"></script>
+  <script src="./scripts/popup.js"></script>
+  <script src="./scripts/swiper.js"></script>
 </body>
 </html>
