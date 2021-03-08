@@ -5,8 +5,17 @@ const modal = document.querySelector(".modal");
 const buttonModalClose = document.querySelector(".modal_button-close");
 const sliderDescription = document.querySelector(".slider_description-content");
 
-// const timeout = 800;
-// const lockPaddingValue = window.innerWidth - wrapper.offsetWidth + "px";
+const stopVideos = () => {
+    var videos = document.querySelectorAll("iframe, video");
+    Array.prototype.forEach.call(videos, (video) => {
+        if (video.tagName.toLowerCase() === "video") {
+            video.pause();
+        } else {
+            var src = video.src;
+            video.src = src;
+        }
+    });
+};
 
 const swiper = new Swiper(".swiper-container", {
     // arrows
@@ -39,11 +48,6 @@ const swiper = new Swiper(".swiper-container", {
     //
     // slideToClickedSlide: true,
 
-    // navigation
-    // hashNavigation: {
-    //     watchState: true,
-    // },
-
     // keyboard
     keyboard: {
         enabled: true,
@@ -60,16 +64,19 @@ const swiper = new Swiper(".swiper-container", {
 
     speed: 700,
 
-    effect: "fade",
-    fadeEffect: {
-        crossFade: true,
-    },
+    // effect: "fade",
+    // fadeEffect: {
+    //     crossFade: true,
+    // },
 });
+
+swiper.on("slideChange", stopVideos);
 
 const closeModalHandler = () => {
     popup.classList.remove("open");
     modal.classList.remove("open");
     swiper.slideTo(0);
+    stopVideos();
     document.removeEventListener("keydown", escListener);
     setTimeout(() => {
         lockPadding.forEach((item) => (item.style.paddingRight = 0));
