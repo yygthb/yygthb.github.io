@@ -1,0 +1,33 @@
+:root {
+  --color-orange: rgb(240, 163, 48);
+  --color-orange-hover: rgb(223, 139, 14);
+  --color-orange-active: rgb(201, 121, 0);
+  --color-card: rgb(28,28,28);
+}
+
+.wrapper_minor {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.section_minor {
+  flex: 1;
+  margin-top: 90px;
+}
+
+.header_nav_link.active {
+  color: var(--color-orange)
+}
+
+/* Team */
+
+/* /Team */
+
+/* Projects */
+
+/* /Projects */
+
+/* DCP */
+
+/* /DCP */

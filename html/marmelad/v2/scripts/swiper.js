@@ -74,7 +74,7 @@ swiper.on("slideChange", stopVideos);
 const closeModalHandler = () => {
     popup.classList.remove("open");
     modal.classList.remove("open");
-    // swiper.slideTo(0);
+    swiper.slideTo(0);
     stopVideos();
     document.removeEventListener("keydown", escListener);
     setTimeout(() => {

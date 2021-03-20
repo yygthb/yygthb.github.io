@@ -7,7 +7,6 @@
   <link rel="icon" href="./media/favicon.jpg" type="image/x-icon">
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./styles/swiper-bundle.min.css">
   <link rel="stylesheet" href="./styles/normalize.css">
@@ -29,7 +28,7 @@
   <div class="wrapper">
     <header class="section_header lock-padding">
       <div class="content">
-        <header class="header" id="main">
+        <header class=" header">
           <div class="header_logo">
             <a href="#">
               <img src="./media/logo.webp" alt="marmeladov logo">
@@ -37,10 +36,11 @@
           </div>
           <div class="header_menu">
             <div class="header_nav">
-              <a class="header_nav_link" href="./team.html">О нас</a>
-              <a class="header_nav_link" href="./projects.html">Проекты</a>
-              <a class="header_nav_link" href="./dcp.html">DCP-конвертация</a>
-              <a class="header_nav_link" href="./audio.html">Аудиореклама</a>
+              <a class="header_nav_link" href="#">Виды работ</a>
+              <a class="header_nav_link" href="#">О нас</a>
+              <a class="header_nav_link" href="#">Портфолио</a>
+              <a class="header_nav_link" href="#">Конвертация</a>
+              <a class="header_nav_link" href="#">Аудиоролики</a>
             </div>
             <div class="header_contact">
               <a class="header_contact_phone" href="#">+7 (917) 705 78 80</a>
@@ -64,13 +64,15 @@
     <section class="section_video">
       <div class="video_wrapper">
         <video class="video" autoplay muted loop>
-          <source src="./media/video_old.mp4"> 
-          <!-- <source src="./media/video_intro1.mp4">  -->
+          <!-- <source src="./media/video_old.mp4">  -->
+          <source src="./media/video_intro1.mp4"> 
         </video>
         <div class="video_overflow">
           <div class="content">
             <div class="video_content">
-              <!-- <h2 class="video_title">some text in<br>two rows</span></h2> -->
+              <h1 class="video_title" >
+                Videos that move <br> the world forward
+              </h1>
             </div>
           </div>
         </div>
@@ -84,8 +86,9 @@
             <h1 class="intro_title">Студия видеорекламы <span class="text_colored">MARMELADOV</span> </h1>
             <div class="intro_text">
               <p class="text_row">Это продакшн полного цикла.</p>
-              <p class="text_row">Наша творческая команда более 12 лет <span class="text_colored">успешно</span> работает над проектами разной сложности. <br> Мы постоянно учимся, экспериментируем, развиваемся, чтобы добиваться <span class="text_colored">лучших результатов!</span></p>
-              <p class="text_row">Мы <span class="text_colored">любим</span> свою работу</p>
+              <p class="text_row">Наша творческая команда более 12 лет <span class="text_colored">успешно</span> работает над проектами разной сложности.</p>
+              <p class="text_row">Мы постоянно учимся, экспериментируем, развиваемся, чтобы добиваться <span class="text_colored">лучших результатов.</span></p>
+              <p class="text_row">Мы <span class="text_colored">любим</span> свою работу.</p>
             </div>
             <button class="button button_colored button_order popup_open">заказать видеоролик</button>
           </div>
@@ -141,39 +144,9 @@
   
     <section class="section_benefits">
       <div class="content">
-        <h3 class="section_title benefits_title">Видеореклама позволяет достичь следующих целей</h3>
-        <div class="benefits_wrapper">
-          <div class="benefit_item">
-            <div class="benefit_image_wrapper">
-              <img src="./media/benefits/presentation.svg" alt="" class="benefit_img presentation">
-            </div>
-            <h5 class="benefit_title presentation">РАССКАЖЕТ О ВАШЕМ ПРОДУКТЕ</h5>
-          </div>
-          <div class="benefit_item">
-            <div class="benefit_image_wrapper">
-              <img src="./media/benefits/recognition.svg" alt="" class="benefit_img recognition">
-            </div>
-            <h5 class="benefit_title recognition">ПОВЫСИТ УЗНАВАЕМОСТЬ КОМПАНИИ</h5>
-          </div>
-          <div class="benefit_item">
-            <div class="benefit_image_wrapper">
-              <img src="./media/benefits/trust.svg" alt="" class="benefit_img trust">
-            </div>
-            <h5 class="benefit_title trust">УВЕЛИЧИТ ДОВЕРИЕ К ВАШЕЙ КОМПАНИИ</h5>
-          </div>
-          <div class="benefit_item">
-            <div class="benefit_image_wrapper">
-              <img src="./media/benefits/info.svg" alt="" class="benefit_img info">
-            </div>
-            <h5 class="benefit_title info">СДЕЛАЕТ СЛОЖНУЮ ИНФОРМАЦИЮ ПОНЯТНОЙ</h5>
-          </div>
-          <div class="benefit_item">
-            <div class="benefit_image_wrapper">
-              <img src="./media/benefits/profit.svg" alt="" class="benefit_img profit">
-            </div>
-            <h5 class="benefit_title profit">УВЕЛИЧИТ ПРОДАЖИ И ПРИБЫЛЬ</h5>
-          </div>
-        </div>
+        <h3 class="section_title benefits_title">НАША КОМАНДА</h3>
+        <br>
+        <br style="margin-bottom: 900px;">
         <img src="./media/image_prod.webp" alt="" class="background_image soffit">
       </div>
     </section>
@@ -291,6 +264,7 @@
             <img src="./media/partners/akashevo.svg" alt="" class="clients_logo akashevo">
           </div>
         </div>
+        <img src="./media/dron.webp" alt="" class="background_image dron">
       </div>
     </section>
   
@@ -319,13 +293,13 @@
               </a>
             </div>
           </div>
-          <div class="footer_production">© MARMELADOV video production 2021</div>
+          <div class="footer_production">© MARMELADOV video producion 2021</div>
         </div>
       </div>
     </footer>
   </div>
 
-  <div class="popup hidden">
+  <div class="popup">
     <div class="popup_body popup-close">
       <div class="popup_content">
         <div class="button popup_button-close popup-close">+</div>
@@ -341,7 +315,7 @@
     </div>
   </div>
 
-  <div class="modal hidden">
+  <div class="modal">
       <div class="modal_body">
         <!-- Slider main container -->
         <div class="swiper-container">
@@ -623,7 +597,6 @@
   </div>
   
   <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-  <script src="./scripts/script.js"></script>
   <script src="./scripts/swiper-bundle.min.js"></script>
   <script src="./scripts/popup.js"></script>
   <script src="./scripts/swiper.js"></script>

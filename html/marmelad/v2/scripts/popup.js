@@ -18,9 +18,7 @@ const bodyLock = () => {
 
 const closePopupHandler = () => {
     popup.classList.remove("open");
-    if (modal) {
-        modal.classList.remove("open");
-    }
+    modal.classList.remove("open");
     setTimeout(() => {
         lockPadding.forEach((item) => (item.style.paddingRight = 0));
         body.classList.remove("lock");
