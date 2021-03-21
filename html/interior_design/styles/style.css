@@ -127,13 +127,13 @@ body a {
   background: linear-gradient(180.06deg, rgba(0, 0, 0, 0.5) -10.61%, rgba(0, 0, 0, 0) 99.95%), url(5-edit.jpg);
 }
 .swiper_intro .swiper-slide.one {
-  background-image: url("../media//intro/img_polyanka.jpg");
+  background-image: url("../media//intro/img_polyanka-min.jpg");
 }
 .swiper_intro .swiper-slide.two {
-  background-image: url("../media//intro/img_livingroom_three.jpg");
+  background-image: url("../media//intro/img_livingroom_three-min.jpg");
 }
 .swiper_intro .swiper-slide.three {
-  background-image: url("../media//intro/img_bedroom_one.jpg");
+  background-image: url("../media//intro/img_bedroom_one-min.jpg");
 }
 .swiper-content {
   position: relative;
