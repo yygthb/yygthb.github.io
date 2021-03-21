@@ -250,7 +250,7 @@ body a {
   margin-bottom: 20px;
 }
 .room_subtitle {
-  max-width: 620px;
+  max-width: 42%;
 }
 .room_image {
   width: 40vw;
@@ -285,6 +285,8 @@ body a {
   margin-bottom: 32px;
 }
 .advertise_subtitle {
+  max-width: 690px;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 /* /Advertise */
@@ -327,6 +329,23 @@ body a {
 .browser_content {
   background-color: #fff;
   height: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 175px);
+  grid-template-columns: repeat(4, 175px);
+  gap: 25px;
+  justify-content: center;
+  overflow: hidden;
+}
+.browser_content_img {
+  height: 175px;
+  width: 175px;
+  object-fit: cover;
+}
+.browser_content_img:nth-child(2n+1) {
+  margin-top: -46px;
+}
+.browser_content_img:nth-child(2n) {
+  margin-top: 10px;
 }
 .clients_wrapper {
   display: grid;
@@ -492,6 +511,8 @@ body a {
 .project_card_img {
   height: 240px;
   width: auto;
+  max-width: 100%;
+  object-fit: cover;
   margin: 0 auto;
   margin-bottom: 30px;
 }

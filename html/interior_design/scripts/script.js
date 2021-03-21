@@ -93,8 +93,7 @@ const swiperProjects = new Swiper(".swiper_projects", {
     nextEl: ".slider_button_next",
     prevEl: ".slider_button_prev",
   },
-
-  // centeredSlides: true,
+  allowTouchMove: false,
   watchOverflow: true,
   slidesPerView: 4,
   spaceBetween: 20,
