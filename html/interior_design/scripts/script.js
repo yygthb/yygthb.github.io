@@ -48,10 +48,16 @@ const closeModalHandler = () => {
     wrapper.style.marginRight = 0;
   }, timeout);
 };
+const escListener = (e) => {
+  if (e.key === "Escape") {
+    closeModalHandler();
+  }
+};
 buttonModalOpen.forEach((item) => {
   item.onclick = () => {
     bodyLock();
     modal.classList.add("open");
+    document.addEventListener("keydown", escListener);
   };
 });
 modalClose.forEach((item) => {
@@ -95,9 +101,24 @@ const swiperProjects = new Swiper(".swiper_projects", {
   },
   allowTouchMove: false,
   watchOverflow: true,
-  slidesPerView: 4,
-  spaceBetween: 20,
   speed: 1000,
+  breakpoints: {
+    500: {
+      slidesPerView: 1,
+    },
+    750: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
+    1300: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
 });
 
 // email-form

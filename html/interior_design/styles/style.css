@@ -74,6 +74,7 @@ body a {
   width: 100%;
   z-index: 200;
   background-color: transparent;
+  transition: background-color .5s linear;
 }
 .header .content {
   max-width: 1650px;
@@ -87,8 +88,7 @@ body a {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  transition: height .5s linear;
-  transition: background-color, height .5s linear;
+  transition: all .5s linear;
 }
 .header_active .header_wrapper {
   height: 90px;
@@ -146,7 +146,7 @@ body a {
 .intro_wrapper {
   position: absolute;
   height: 100%;
-  margin-left: 160px;
+  margin-left: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,7 +222,7 @@ body a {
   margin-bottom: 200px;
 }
 .benefit_card {
-  max-width: 400px;
+  max-width: 365px;
 }
 .benefit_num {
   font-family: "Open Sans";
@@ -388,6 +388,14 @@ body a {
   display: flex;
   width: 100%;
   height: 830px;
+  position: relative;
+}
+.team_wrapper {
+  display: flex;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 .team_photo {
   background: url("../media/img_team.jpg") no-repeat center;
@@ -395,18 +403,23 @@ body a {
   width: 50%;
   height: 100%;
 }
+.team_photo_wrapper {
+  width: calc(50vw - 24px);
+}
 .team_text {
   width: 50%;
   padding-top: 123px;
-  padding-left: 160px;
+  padding-left: 145px;
 }
 .team_title {
-  width: 580px;
+  max-width: 580px;
   margin-bottom: 46px;
+  padding-right: 15px;
 }
 .team_subtitle {
-  width: 665px;
+  max-width: 665px;
   margin-bottom: 66px;
+  padding-right: 15px;
 }
 /* /Team */
 
@@ -421,7 +434,8 @@ body a {
   text-align: center;
 }
 .feedback_wrapper {
-  width: 828px;
+  max-width: 858px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 .feedback_card {
@@ -437,7 +451,7 @@ body a {
 .guest_feedback_wrapper {
   background-color: #fff;
   padding: 32px 40px;
-  max-width: 677px;
+  max-width: 82%;
   border-radius: 10px;
   position: relative;
 }
@@ -524,6 +538,7 @@ body a {
 .project_card_subtitle {
   font-size: 16px;
   line-height: 32px;
+  padding-right: 8px;
 }
 /* /Projects */
 
@@ -633,7 +648,7 @@ body a {
   justify-content: center;
   background: url('../media/bg_modal.jpg') no-repeat center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 0 20px -5px #000;
   position: relative;
   text-align: center;
