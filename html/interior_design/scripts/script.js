@@ -3,7 +3,7 @@ const wrapper = document.querySelector(".wrapper");
 const lockPadding = document.querySelectorAll(".lock-padding");
 
 const modal = document.querySelector(".modal");
-const modalContent = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal_content");
 const buttonModalOpen = document.querySelectorAll(".modal-open");
 const modalClose = document.querySelectorAll(".modal-close");
 const buttonModalSend = document.querySelector(".modal_button-send");
@@ -48,26 +48,27 @@ const closeModalHandler = () => {
     wrapper.style.marginRight = 0;
   }, timeout);
 };
-(function () {
-  buttonModalOpen.forEach((item) => {
-    item.onclick = () => {
-      bodyLock();
-      modal.classList.add("open");
-    };
-  });
-  modalClose.forEach((item) => {
-    item.onclick = () => closeModalHandler();
-  });
-  modalContent.onclick = (e) => {
-    e.stopImmediatePropagation();
+buttonModalOpen.forEach((item) => {
+  item.onclick = () => {
+    bodyLock();
+    modal.classList.add("open");
   };
-  buttonModalSend.onclick = (e) => {
-    e.preventDefault();
-  };
-})();
+});
+modalClose.forEach((item) => {
+  item.onclick = () => closeModalHandler();
+});
+modalContent.onclick = (e) => {
+  e.stopImmediatePropagation();
+};
+
+// modal form
+const buttonSubmit = document.querySelector(".modal_button_submit");
+buttonSubmit.onclick = (e) => {
+  e.preventDefault();
+};
 
 // intro swiper
-const swiper = new Swiper(".swiper-container", {
+const swiperIntro = new Swiper(".swiper_intro", {
   centeredSlides: true,
   slidesPerView: "auto",
   pagination: {
@@ -85,3 +86,21 @@ const swiper = new Swiper(".swiper-container", {
     crossFade: true,
   },
 });
+
+// projects swiper
+const swiperProjects = new Swiper(".swiper_projects", {
+  navigation: {
+    nextEl: ".slider_button_next",
+    prevEl: ".slider_button_prev",
+  },
+
+  // centeredSlides: true,
+  watchOverflow: true,
+  slidesPerView: 4,
+  spaceBetween: 20,
+  speed: 1000,
+});
+
+// email-form
+const buttonEmail = document.querySelector(".form_button_email");
+buttonEmail.onclick = (e) => e.preventDefault();

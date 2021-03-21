@@ -73,6 +73,7 @@ body a {
   left: 0;
   width: 100%;
   z-index: 200;
+  background-color: transparent;
 }
 .header .content {
   max-width: 1650px;
@@ -87,13 +88,14 @@ body a {
   justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   transition: height .5s linear;
-}
-.header_active {
-  background-color: #C4C4C4;
+  transition: background-color, height .5s linear;
 }
 .header_active .header_wrapper {
   height: 90px;
   border-bottom: 1px solid transparent;
+}
+.header_active {
+  background-color: #A09FA5;
 }
 .header_nav_link:not(:first-child) {
   margin-left: 60px;
@@ -101,19 +103,19 @@ body a {
 /* /Header */
 
 /* Swiper */
-.swiper-container {
+.swiper_intro {
   margin-bottom: 150px;
   width: 100%;
   height: 930px;
   position: relative;
 }
-.swiper-slide {
+.swiper_intro .swiper-slide {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
 }
-.swiper-container::after {
+.swiper_intro::after {
   display: block;
   content: "";
   top: 0;
@@ -124,13 +126,13 @@ body a {
   z-index: 5;
   background: linear-gradient(180.06deg, rgba(0, 0, 0, 0.5) -10.61%, rgba(0, 0, 0, 0) 99.95%), url(5-edit.jpg);
 }
-.swiper-slide.one {
+.swiper_intro .swiper-slide.one {
   background-image: url("../media//intro/img_polyanka.jpg");
 }
-.swiper-slide.two {
+.swiper_intro .swiper-slide.two {
   background-image: url("../media//intro/img_livingroom_three.jpg");
 }
-.swiper-slide.three {
+.swiper_intro .swiper-slide.three {
   background-image: url("../media//intro/img_bedroom_one.jpg");
 }
 .swiper-content {
@@ -454,30 +456,37 @@ body a {
   margin-top: 130px;
   margin-bottom: 200px;
 }
+.section_projects .content {
+  position: relative;
+}
 .projects_title {
   margin-bottom: 46px;
 }
-.projects_cards {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
 .project_arrows {
   position: absolute;
-  right: 0;
-  top: -90px;
+  right: 15px;
+  top: 10px;
 }
-.project_arrow {
-  cursor: pointer;
+.slider_button {
+ cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
 }
-.project_arrow.hide {
+.slider_button.swiper-button-disabled {
   opacity: 0.3;
+  cursor: initial;
 }
-.project_arrow:last-child {
-  margin-left: 15px;
+.projects_cards {
+  min-width: 0;
+  overflow: hidden;
+}
+.swiper_projects .swiper-slide {
+  width: 23%;
 }
 .project_card {
-  width: 380px;
+  width: 100%;
   overflow: hidden;
 }
 .project_card_img {
@@ -518,7 +527,7 @@ body a {
   border: 1px solid #000;
   padding-left: 16px;
 }
-.email_form_button {
+.form_button_email {
   min-width: 186px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -557,6 +566,9 @@ body a {
 /* /Footer */
 
 /* Modal */
+.modal.hidden {
+  display: none;
+}
 .modal {
   position: fixed;
   z-index: 500;
@@ -570,6 +582,7 @@ body a {
   overflow-y: auto;
   overflow-x: hidden;
   transition: all 0.8s;
+  z-index: 5000000;
 }
 .modal.open {
   opacity: 1;
@@ -614,9 +627,6 @@ body a {
   font-size: 80px;
   transform: rotate(45deg)
 }
-.modal_form {
-
-}
 .form_input {
   width: 340px;
   margin-bottom: 40px;
@@ -625,7 +635,7 @@ body a {
   background: rgba(255, 255, 255, 0.95);
   letter-spacing: 1px;
 }
-.modal_button-send {
+.modal_button_submit {
   width: 340px;
 }
 /* /Modal */

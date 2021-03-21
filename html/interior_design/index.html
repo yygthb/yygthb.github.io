@@ -42,7 +42,7 @@
       </div>
     </header>
 
-    <div class="swiper-container">
+    <div class="swiper_intro">
       <div class="swiper-wrapper">
         <div class="swiper-slide one"></div>
         <div class="swiper-slide two"></div>
@@ -202,32 +202,56 @@
 
     <div class="section_projects">
       <div class="content">
-        <div class="projects_wrapper">
-          <h2 class="title projects_title">Проекты</h2>
-          <div class="projects_cards">
-            <div class="project_card">
-              <img src="./media/projects/moscow-city.jpg" alt="" class="project_card_img">
-              <h4 class="project_card_title">Москва-Сити</h4>
-              <p class="project_card_subtitle">Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.</p>
-            </div>
-            <div class="project_card">
-              <img src="./media/projects/ss70.jpg" alt="" class="project_card_img">
-              <h4 class="project_card_title">SS70</h4>
-              <p class="project_card_subtitle">Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к первому варианту.</p>
-            </div>
-            <div class="project_card">
-              <img src="./media/projects/voron170.jpg" alt="" class="project_card_img">
-              <h4 class="project_card_title">Voron, 170</h4>
-              <p class="project_card_subtitle">Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в стилистике природного камня.</p>
-            </div>
-            <div class="project_card">
-              <img src="./media/projects/studio80.jpg" alt="" class="project_card_img">
-              <h4 class="project_card_title">Studio, 80</h4>
-              <p class="project_card_subtitle">Квартира без стен с единым пространством,  открытым потолком и темными стенами, с акцентом на центральную колонну.</p>
-            </div>
-            <div class="project_arrows">
-              <img src="./media/arrow-prev.png" alt="" class="project_arrow prev hide">
-              <img src="./media/arrow-next.png" alt="" class="project_arrow next">
+        <div class="project_arrows">
+          <button class="slider_button slider_button_prev"><img src="./media/arrow-prev.png" alt="" class="project_arrow prev hide"></button>
+          <button class="slider_button slider_button_next"><img src="./media/arrow-next.png" alt="" class="project_arrow next"></button>
+        </div>
+        <h2 class="title projects_title">Проекты</h2>
+        <div class="projects_cards">
+          <div class="swiper_projects">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="project_card">
+                  <img src="./media/projects/moscow-city.jpg" alt="" class="project_card_img">
+                  <h4 class="project_card_title">Москва-Сити</h4>
+                  <p class="project_card_subtitle">Эти апартаменты, на 79-м этаже башни Федерация в Москва-Сити, предназначены для посуточной аренды в AirBnB. Каждый желающий сможет тут переночевать.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project_card">
+                  <img src="./media/projects/ss70.jpg" alt="" class="project_card_img">
+                  <h4 class="project_card_title">SS70</h4>
+                  <p class="project_card_subtitle">Эта квартира в ЖК Сердце столицы, ещё в процессе согласования. И, чем дальше мы двигаемся по правкам, тем больше клиент склоняется к первому варианту.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project_card">
+                  <img src="./media/projects/voron170.jpg" alt="" class="project_card_img">
+                  <h4 class="project_card_title">Voron, 170</h4>
+                  <p class="project_card_subtitle">Стена за телевизором, это архитектурный бетон. По заказу клиента выполненный в стилистике природного камня.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project_card">
+                  <img src="./media/projects/studio80.jpg" alt="" class="project_card_img">
+                  <h4 class="project_card_title">Studio, 80</h4>
+                  <p class="project_card_subtitle">Квартира без стен с единым пространством,  открытым потолком и темными стенами, с акцентом на центральную колонну.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project_card">
+                  <img src="./media/projects/aston-plaza.jpg" alt="" class="project_card_img">
+                  <h4 class="project_card_title">Aston Plaza</h4>
+                  <p class="project_card_subtitle">Дизайнеры нашей студии оформили квартиру в ЖК «Астон Плаза» г.Екатеринбург. От старой и безжизненной резиденции не осталось и следа.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="project_card">
+                  <img src="./media/projects/federation-tower.jpg" alt="" class="project_card_img">
+                  <h4 class="project_card_title">Federation Tower 160</h4>
+                  <p class="project_card_subtitle">Москва, Апартаменты, 160 m²</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -238,7 +262,7 @@
       <h2 class="title email_title">Оставьте ваш Email и мы свяжемся с вами</h2>
       <form class="email_form">
         <input type="email" placeholder="Email" class="email_form_input">
-        <button class="button email_form_button">Отправить</button>
+        <button class="button form_button_email">Отправить</button>
       </form>
     </div>
 
@@ -272,7 +296,7 @@
             <input type="text" placeholder="Имя" class="form_input modal_input-name">
             <input type="text" placeholder="Телефон" class="form_input modal_input-phone">
             <input type="email" placeholder="E-mail" class="form_input modal_inupt-email">
-            <button class="button button_colored modal_button-send">Отправить</button>
+            <button class="button button_colored modal_button_submit">Отправить</button>
           </form>
         </div>
       </div>
