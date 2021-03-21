@@ -26,7 +26,7 @@
 
   <div class="wrapper">
 
-    <header class="header">
+    <header class="header lock-padding">
       <div class="content">
         <div class="header_wrapper">
           <a href="#" class="header_logo">
@@ -46,9 +46,35 @@
       <div class="content">
         <div class="intro_wrapper">
           <h1 class="intro_title">Дизайн интерьера от картинки до реализации</h1>
-          <div class="intro_button button button_order">Заказать дизайн</div>
+          <div class="intro_button button modal-open">Заказать дизайн</div>
         </div>
       </div>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./media/intro/img_polyanka.jpg" alt="" class="swiper-slide_img">
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/intro/img_livingroom_one.jpg" alt="" class="swiper-slide_img">
+        </div>
+        <div class="swiper-slide">
+          <img src="./media/intro/img_livingroom_two.jpg" alt="" class="swiper-slide_img">
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
     </div>
 
     <div class="section_slogan">
@@ -103,7 +129,7 @@
         <div class="advertise_wrapper">
           <h2 class="title advertise_title">Подберите мебель для любого проекта</h2>
           <p class="subtitle advertise_subtitle">Новый способ для профессионалов интерьера покупать мебель. Просмотрите миллионы продуктов от ведущих мировых брендов.</p>
-          <button class="button button_order advertise_button">Заказать дизайн</button>
+          <button class="button modal-open advertise_button">Заказать дизайн</button>
         </div>
       </div>
     </div>
@@ -155,7 +181,7 @@
       <div class="team_text">
         <h2 class="title team_title">Наша команда позаботится<br />о вашем комфорте</h2>
         <p class="subtitle team_subtitle">У вас есть одно контактное лицо - мы. Мы займемся каждым поставщиком и всем управлением. Установка на месте, включая сборку, размещение, снятие зацепов и удаление упаковки. Мы объединим заказы от нескольких поставщиков и доставим их по необходимости.</p>
-        <button class="button button_order advertise_button">Заказать дизайн</button>
+        <button class="button modal-open advertise_button">Заказать дизайн</button>
       </div>
     </div>
 
@@ -257,8 +283,24 @@
       </div>
     </footer>
 
+    <div class="modal hidden">
+      <div class="modal_body modal-close">
+        <div class="modal_content">
+          <div class="modal_button-close modal-close">+</div>
+          <form class="modal_form">
+            <input type="text" placeholder="Имя" class="form_input modal_input-name">
+            <input type="text" placeholder="Телефон" class="form_input modal_input-phone">
+            <input type="email" placeholder="E-mail" class="form_input modal_inupt-email">
+            <button class="button button_colored modal_button-send">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
   </div>
   
+  <script src="./scripts/swiper-bundle.min.js"></script>
   <script src="./scripts/script.js"></script>
+
 </body>
 </html>
