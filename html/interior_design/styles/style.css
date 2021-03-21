@@ -98,22 +98,51 @@ body a {
 .header_nav_link:not(:first-child) {
   margin-left: 60px;
 }
-
 /* /Header */
 
-/* Intro */
-.section_intro {
+/* Swiper */
+.swiper-container {
+  margin-bottom: 150px;
   width: 100%;
   height: 930px;
-  background: url("../media/intro/img_polyanka.jpg") no-repeat center;
-  background-size: cover;
-  margin-bottom: 115px;
+  position: relative;
 }
-.section_intro .content {
-  margin: 0 auto;
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.swiper-container::after {
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 5;
+  background: linear-gradient(180.06deg, rgba(0, 0, 0, 0.5) -10.61%, rgba(0, 0, 0, 0) 99.95%), url(5-edit.jpg);
+}
+.swiper-slide.one {
+  background-image: url("../media//intro/img_polyanka.jpg");
+}
+.swiper-slide.two {
+  background-image: url("../media//intro/img_livingroom_three.jpg");
+}
+.swiper-slide.three {
+  background-image: url("../media//intro/img_bedroom_one.jpg");
+}
+.swiper-content {
+  position: relative;
+  bottom: 100%;
   height: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
 }
 .intro_wrapper {
+  position: absolute;
   height: 100%;
   margin-left: 160px;
   display: flex;
@@ -139,25 +168,18 @@ body a {
 .intro_button:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* /Intro */
-
-/* Swiper */
-.swiper-container {
-  margin-bottom: 150px;
-  width: 100%;
-  height: 930px;
+.swiper-pagination {
+  bottom: 56px;
 }
-.swiper-slide {
-  text-align: center;
-  width: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100vw;
+.swiper-pagination-bullet {
+  height: 8px;
+  width: 66px;
+  border-radius: 4px;
+  margin-right: 12px;
+  background-color: #fff;
 }
-.swiper-slide_img {
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
+.swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 /* /Swiper */
 
@@ -598,7 +620,7 @@ body a {
 .form_input {
   width: 340px;
   margin-bottom: 40px;
-  padding: 18px 20px;
+  padding: 19px 20px;
   border: none;
   background: rgba(255, 255, 255, 0.95);
   letter-spacing: 1px;

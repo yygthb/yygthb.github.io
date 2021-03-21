@@ -67,59 +67,21 @@ const closeModalHandler = () => {
 })();
 
 // intro swiper
-
 const swiper = new Swiper(".swiper-container", {
   centeredSlides: true,
   slidesPerView: "auto",
-
-  // arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // navigation
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-
-    // type: bullets
-    // type: "bullets",
-    // dynamicBullets: true,
-
-    // type: fraction
-    type: "fraction",
   },
-
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    draggable: true,
+  autoplay: {
+    delay: 5000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
   },
-
-  // cursor
-  grabCursor: true,
-
-  //
-  // slideToClickedSlide: true,
-
-  // keyboard
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
+  speed: 2000,
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
   },
-
-  // // mouse wheel
-  // mousewheel: {
-  //     sensitivity: 1,
-  // },
-
-  // // infinity slider
-  // loop: true,
-
-  speed: 700,
-
-  // effect: "fade",
-  // fadeEffect: {
-  //     crossFade: true,
-  // },
 });
