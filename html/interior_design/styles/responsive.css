@@ -163,3 +163,216 @@
     max-width: 630px;
   }
 }
+
+@media screen and (max-width: 850px) {
+  .benefits_wrapper {
+    margin-bottom: 90px;
+  }
+  .section_room {
+    height: auto;
+  }
+  .room_wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .room_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .room_title {
+    max-width: 100%;
+  }
+  .room_subtitle {
+    max-width: 90%;
+    margin-bottom: 70px;
+  }
+  .room_photo {
+    position: static;
+    width: calc(100% - 161px);
+    margin-left: auto;
+    height: 800px;
+  }
+  .room_items {
+    transform: translate(-50%, 90px);
+  }
+  .section_advertise {
+    margin-bottom: 240px;
+  }
+  .browser_content {
+    grid-template-rows: repeat(6, 175px);
+    grid-template-columns: repeat(3, 175px);
+  }
+  .browser_content_img:nth-child(3n+1) {
+    margin-top: -60px;
+  }
+  .browser_content_img:nth-child(3n+3) {
+    margin-top: -60px;
+  }
+  .browser_content_img:nth-child(3n+2) {
+    margin-top: 20px;
+  }
+  .section_team {
+    height: 100%;
+    margin-bottom: 120px;
+  } 
+  .team_wrapper {
+    position: static;
+    flex-direction: column;
+  }
+  .team_photo {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 120px;
+  }
+  .team_text {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team_title {
+    max-width: 100%;
+    text-align: center;
+  }
+  .team_subtitle {
+    max-width: 90%;
+    text-align: center;
+  }
+  .guest_photo {
+    margin: 0 auto;
+  }
+  .guest_feedback_wrapper {
+    padding: 20px 20px;
+    max-width: 77%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header .content {
+    padding: 0 10px;
+  }
+  .content {
+    padding: 0 10px;
+  }
+  .feedback_wrapper {
+    padding: 0 10px;
+  }
+  .slogan {
+    max-width: 85%;
+  }
+  .intro_title {
+    font-size: 48px;
+    line-height: 54px;
+  }
+  .advertise_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .advertise_title {
+    max-width: 80%;
+  }
+  .advertise_subtitle {
+    max-width: 80%;
+  }
+  .section_assets {
+    margin-bottom: 110px;
+  }
+  .assets_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .asset_card {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .guest_photo {
+    margin: 0;
+  }
+  .section_feedback {
+    padding-top: 73px;
+    padding-bottom: 120px;
+  }
+  .section_projects {
+    margin-bottom: 140px;
+  }
+  .project_card_img {
+    height: 450px;
+  }
+  .project_card_subtitle {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .intro_title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .benefits_wrapper {
+    margin-bottom: 50px;
+  }
+  .benefit_num {
+    margin: 0 15px;
+  }
+  .room_title {
+    max-width: 400px;
+  }
+  .section_clients {
+    height: 1030px;
+  }
+  .clients_wrapper {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(4, 90px);
+  }
+  .browser_wrapper {
+    height: 580px;
+  }
+  .browser_content {
+    gap: 15px;
+  }
+  .feedback_card:last-child {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .room_photo {
+    width: 100%;
+    height: 700px;
+  }
+  .room_item:nth-child(n+3) {
+    display: none;
+  }
+  .room_items {
+    transform: translate(22%, 39px);
+    grid-template-columns: repeat(1, 160px);
+    gap: 10px;
+  }
+  .room_item {
+    border-radius: 8px; 
+  }
+  .browser_content {
+    grid-template-columns: repeat(2, 175px);
+  }
+  .browser_content_img:nth-child(3n+1),
+  .browser_content_img:nth-child(3n+2),
+  .browser_content_img:nth-child(3n+3) {
+    margin-top: 0;
+  }
+  .browser_content_img:nth-child(2n+1) {
+    margin-top: -60px;
+  }
+  .browser_content_img:nth-child(2n+2) {
+    margin-top: 20px;
+  }
+}
+

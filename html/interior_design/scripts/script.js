@@ -11,7 +11,13 @@ const buttonModalSend = document.querySelector(".modal_button-send");
 const header = document.querySelector(".header");
 
 const timeout = 800;
-const lockPaddingValue = window.innerWidth - wrapper.offsetWidth + "px";
+
+// get scrollBar width
+var scrollDiv = document.createElement("div");
+scrollDiv.className = "scrollbar-measure";
+document.body.appendChild(scrollDiv);
+var lockPaddingValue = scrollDiv.offsetWidth - scrollDiv.clientWidth + "px";
+document.body.removeChild(scrollDiv);
 
 // hide modal until document load
 window.addEventListener("load", function () {
@@ -105,18 +111,23 @@ const swiperProjects = new Swiper(".swiper_projects", {
   breakpoints: {
     500: {
       slidesPerView: 1,
+      spaceBetween: 10,
+      allowTouchMove: true,
     },
     750: {
       slidesPerView: 2,
       spaceBetween: 15,
+      allowTouchMove: true,
     },
     1000: {
       slidesPerView: 3,
       spaceBetween: 15,
+      allowTouchMove: false,
     },
     1300: {
       slidesPerView: 4,
       spaceBetween: 20,
+      allowTouchMove: false,
     },
   },
 });
