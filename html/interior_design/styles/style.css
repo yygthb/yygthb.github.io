@@ -1,6 +1,7 @@
 :root {
   --color-darkgrey: #404040;
-  --color_grey: #232323;
+  --color-grey: #232323;
+  --color-header: #A09FA5;
 }
 
 * {
@@ -65,12 +66,20 @@ body a {
   background-color: #000;
   color: #fff;
   border: 0;
+  outline: none;
 }
 .button:hover {
   background-color: rgb(33, 33, 33);
 }
 .button:active {
   background-color: rgb(24, 23, 23);
+}
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 /* Header */
@@ -102,7 +111,7 @@ body a {
   border-bottom: 1px solid transparent;
 }
 .header_active {
-  background-color: #A09FA5;
+  background-color: var(--color-header);
 }
 .header_nav_link:not(:first-child) {
   margin-left: 60px;
@@ -303,7 +312,7 @@ body a {
 
 /* Clients */
 .section_clients {
-  background-color: var(--color_grey);
+  background-color: var(--color-grey);
   height: 1165px;
   margin-bottom: 150px;
 }
@@ -508,7 +517,7 @@ body a {
 .project_arrows {
   position: absolute;
   right: 15px;
-  top: 10px;
+  top: 5px;
 }
 .slider_button {
  cursor: pointer;
@@ -516,6 +525,9 @@ body a {
   margin: 0;
   background: none;
   border: none;
+}
+.slider_button:active {
+  opacity: 0.7;
 }
 .slider_button.swiper-button-disabled {
   opacity: 0.3;

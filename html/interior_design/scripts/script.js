@@ -130,9 +130,9 @@ const swiperProjects = new Swiper(".swiper_projects", {
   watchOverflow: true,
   speed: 1000,
   breakpoints: {
-    500: {
+    0: {
       slidesPerView: 1,
-      spaceBetween: 10,
+      spaceBetween: 2,
       allowTouchMove: true,
     },
     750: {

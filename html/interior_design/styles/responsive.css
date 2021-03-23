@@ -1,3 +1,9 @@
+:root {
+  --color-darkgrey: #404040;
+  --color-grey: #232323;
+  --color-header: #A09FA5;
+}
+
 @media screen and (max-width: 1300px) {
   .benefit_card {
     text-align: center;
@@ -40,6 +46,7 @@
   }
   h3.title {
     font-size: 22px;
+    line-height: 30px;
   }
   .slogan {
     max-width: 900px;
@@ -56,10 +63,16 @@
   .section_team {
     height: 700px;
   }
+  .team_title {
+    padding-right: 0;
+  }
   .team_text {
     width: 50%;
     padding-top: 40px;
     padding-left: 60px;
+  }
+  .project_arrows {
+    right: 5px;
   }
 }
 
@@ -162,6 +175,9 @@
   .email_title {
     max-width: 630px;
   }
+  .projects_title {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -203,6 +219,8 @@
   .browser_content {
     grid-template-rows: repeat(6, 175px);
     grid-template-columns: repeat(3, 175px);
+    
+    justify-items: center;
   }
   .browser_content_img:nth-child(3n+1) {
     margin-top: -60px;
@@ -309,6 +327,9 @@
   .project_card_subtitle {
     width: 85%;
   }
+  .project_arrows {
+    right: 0px;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -327,7 +348,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(237, 80, 32, 0.919);
+    background-color: rgba(31, 31, 31, 0.98);
     padding: 90px 10px 0px;
     z-index: 20;
     overflow: auto;
@@ -343,7 +364,7 @@
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: #A09FA5;
+    background-color: var(--color-header);
     z-index: 99;
   }
   .header_active .header_wrapper {
@@ -356,10 +377,10 @@
   .header_nav_link {
     width: fit-content;
     font-size: 36px;
+    letter-spacing: 2px;
     padding: 10px;
     padding-left: 0;
     margin: 20px 0 20px;
-    background-color: rgba(240, 230, 140, 0.474);
   }
   .nav_burger {
     position: relative;
@@ -427,10 +448,24 @@
   .feedback_card:last-child {
     display: none;
   }
+  .modal_content {
+    max-width: 380px;
+  }
 }
 
-
 @media screen and (max-width: 600px) {
+  .intro_wrapper {
+    padding-bottom: 155px;
+  }
+  .intro_title {
+    font-size: 36px;
+  }
+  .swiper-pagination {
+    bottom: 10px;
+  }
+  .swiper-pagination-bullet {
+    width: 30px;
+  }
   .room_photo {
     width: 100%;
     height: 700px;
@@ -459,6 +494,175 @@
   }
   .browser_content_img:nth-child(2n+2) {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  h2.title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .guest_photo {
+    margin: 0 auto;
+  }
+  .guest_feedback_wrapper::after {
+    content: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .benefit_card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .benefit_num {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    padding: 0 5px;
+  }
+  .section_room .content {
+    padding: 0;
+  }
+  .section_team .content {
+    padding: 0;
+  }
+  .intro_title {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 36px;
+  }
+  .team_photo {
+    height: 450px;
+  }
+  .section_feedback {
+    padding-bottom: 60px;
+  }
+  .feedback_title {
+    margin-bottom: 40px;
+  }
+  .feedback_card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .guest_photo {
+    margin: 0;
+    width: 130px;
+    height: 130px;
+  }
+  .guest_feedback_wrapper {
+    max-width: 100%;
+    text-align: center;
+    background-color: transparent;
+  }
+  .feedback_card.right .guest_photo {
+    order: 0;
+  }
+  .project_card_img {
+    height: 350px;
+  }
+  .form_button_email {
+    min-width: 150px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h3.title {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+  .asset_card {
+    margin-bottom: 55px;
+  }
+  .room_items {
+    transform: translate(16%, 26px);
+  }
+  .project_card_subtitle {
+    line-height: 28px;
+  }
+  .header_nav_link {
+    font-size: 34px;
+    margin: 15px 0 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slogan {
+    max-width: 98%;
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .modal_content {
+    max-width: 100%;
+  }
+  .form_input {
+    width: 100%;
+  }
+  .modal_button_submit {
+    width: 100%;
+  }
+  .team_photo {
+    height: 360px;
+  }
+  .project_card_img {
+    height: 280px;
+    margin-bottom: 20px;
+  }
+  .browser_content {
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(6, 150px);
+  }
+  .browser_content_img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .form_button_email {
+    min-width: 120px;
+    width: 120px;
+  }
+  .social_link:nth-child(3) {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 350px) {
+  .project_card_img {
+    height: 220px;
+  }
+  .browser_content {
+    gap: 7px;
+  }
+  .team_photo {
+    height: 300px;
+    margin-bottom: 80px;
+  }
+  .modal_content {
+    padding-top: 77px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 37px;
+  }
+  .form_input {
+    margin-bottom: 30px;
+  }
+  .modal_button-close {
+    right: 0px;
+  }
+  h2.title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+  h3.title {
+    font-size: 22px;
   }
 }
 
