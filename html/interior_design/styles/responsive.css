@@ -567,6 +567,9 @@
   .form_button_email {
     min-width: 150px;
   }
+  .project_arrows {
+    top: 0px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -575,6 +578,9 @@
   }
   .subtitle {
     font-size: 18px;
+  }
+  .swiper_intro {
+    height: 700px;
   }
   .asset_card {
     margin-bottom: 55px;
@@ -588,6 +594,9 @@
   .header_nav_link {
     font-size: 34px;
     margin: 15px 0 15px;
+  }
+  .projects_title {
+    margin-bottom: 20px;
   }
 }
 
@@ -621,6 +630,12 @@
     height: 150px;
     width: 150px;
   }
+  .section_projects {
+    margin-bottom: 100px;
+  }
+  .project_card_subtitle {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -632,7 +647,6 @@
     display: none;
   }
 }
-
 
 @media screen and (max-width: 350px) {
   .project_card_img {
@@ -663,6 +677,40 @@
   }
   h3.title {
     font-size: 22px;
+  }
+  .social_link {
+    margin-left: 12px;
+  }
+  .footer_wrapper {
+    height: 90px;
+  }
+  .email_title {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .intro_title {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .room_items {
+    transform: translate(12%, 20px);
+  }
+  .browser_content {
+    gap: 0px;
+  }
+  .browser_content_img {
+    height: 140px;
+    width: 140px;
+  }
+  clients_wrapper {
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(4, 88px);
+    column-gap: 0;
+  }
+  .client_logo:nth-child(2n+2) {
+    margin-top: 90px;
   }
 }
 
