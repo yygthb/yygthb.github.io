@@ -107,6 +107,9 @@ body a {
 .header_nav_link:not(:first-child) {
   margin-left: 60px;
 }
+.nav_burger {
+  display: none;
+}
 /* /Header */
 
 /* Swiper */
@@ -131,7 +134,7 @@ body a {
   bottom: 0;
   position: absolute;
   z-index: 5;
-  background: linear-gradient(180.06deg, rgba(0, 0, 0, 0.5) -10.61%, rgba(0, 0, 0, 0) 99.95%), url(5-edit.jpg);
+  background: linear-gradient(180.06deg, rgba(0, 0, 0, 0.5) -10.61%, rgba(0, 0, 0, 0) 99.95%);
 }
 .swiper_intro .swiper-slide.one {
   background-image: url("../media//intro/img_polyanka-min.jpg");

@@ -154,7 +154,7 @@
   .intro_title {
     text-align: center;
     font-size: 54px;
-    width: 100%;
+    width: 98%;
   }
   .intro_button {
     margin: 0 auto;
@@ -309,6 +309,92 @@
   .project_card_subtitle {
     width: 85%;
   }
+}
+
+@media screen and (max-width: 700px) {
+  .header_wrapper {
+    height: 80px;
+  }
+  .header_logo {
+    position: relative;
+    z-index: 100;
+  }
+  .nav_menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 80, 32, 0.919);
+    padding: 90px 10px 0px;
+    z-index: 20;
+    overflow: auto;
+    transition: left 0.4s ease-in;
+  }
+  .nav_menu.active {
+    left: 0;
+  }
+  .header_wrapper::after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #A09FA5;
+    z-index: 99;
+  }
+  .header_active .header_wrapper {
+    height: 80px;
+    border-bottom: none;
+  }
+  .header_nav_link:not(:first-child) {
+    margin-left: 0;
+  }
+  .header_nav_link {
+    width: fit-content;
+    font-size: 36px;
+    padding: 10px;
+    padding-left: 0;
+    margin: 20px 0 20px;
+    background-color: rgba(240, 230, 140, 0.474);
+  }
+  .nav_burger {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 40px;
+  }
+  .burger_line {
+    right: 0;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    transition: transform 0.2s ease;
+  }
+  .burger_line_one {
+    content: "";
+    transform: translateY(-12px);
+  }
+  .burger_line_three {
+    content: "";
+    transform: translateY(12px);
+  }
+  .nav_burger.active .burger_line_two {
+    transform: scale(0);
+  }
+  .nav_burger.active .burger_line_one {
+    transform: rotate(-45deg);
+  }
+  .nav_burger.active .burger_line_three {
+    transform: rotate(45deg);
+  }
+
 }
 
 @media screen and (max-width: 660px) {

@@ -7,10 +7,14 @@ const modalContent = document.querySelector(".modal_content");
 const buttonModalOpen = document.querySelectorAll(".modal-open");
 const modalClose = document.querySelectorAll(".modal-close");
 const buttonModalSend = document.querySelector(".modal_button-send");
-
 const header = document.querySelector(".header");
 
 const timeout = 800;
+
+// hide modal until document load
+window.addEventListener("load", function () {
+  document.querySelector(".modal").classList.remove("hidden");
+});
 
 // get scrollBar width
 var scrollDiv = document.createElement("div");
@@ -18,11 +22,6 @@ scrollDiv.className = "scrollbar-measure";
 document.body.appendChild(scrollDiv);
 var lockPaddingValue = scrollDiv.offsetWidth - scrollDiv.clientWidth + "px";
 document.body.removeChild(scrollDiv);
-
-// hide modal until document load
-window.addEventListener("load", function () {
-  document.querySelector(".modal").classList.remove("hidden");
-});
 
 // header height and background-color
 (function () {
@@ -77,6 +76,28 @@ modalContent.onclick = (e) => {
 const buttonSubmit = document.querySelector(".modal_button_submit");
 buttonSubmit.onclick = (e) => {
   e.preventDefault();
+};
+
+// nav burger
+const burger = document.querySelector(".nav_burger");
+const navMenu = document.querySelector(".nav_menu");
+if (burger) {
+  burger.onclick = (e) => {
+    burger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+    lockPadding.forEach((item) => (item.style.paddingRight = 0));
+    body.classList.toggle("lock");
+  };
+}
+navMenu.onclick = (e) => {
+  e.stopImmediatePropagation();
+  burger.classList.remove("active");
+  navMenu.classList.remove("active");
+  setTimeout(() => {
+    lockPadding.forEach((item) => (item.style.paddingRight = 0));
+    body.classList.remove("lock");
+    wrapper.style.marginRight = 0;
+  }, 400);
 };
 
 // intro swiper
