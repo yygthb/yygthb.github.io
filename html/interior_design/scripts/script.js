@@ -81,10 +81,12 @@ buttonSubmit.onclick = (e) => {
 // nav burger
 const burger = document.querySelector(".nav_burger");
 const navMenu = document.querySelector(".nav_menu");
+const headerWrapper = document.querySelector(".header_wrapper");
 if (burger) {
   burger.onclick = (e) => {
     burger.classList.toggle("active");
     navMenu.classList.toggle("active");
+    headerWrapper.classList.toggle("active");
     lockPadding.forEach((item) => (item.style.paddingRight = 0));
     body.classList.toggle("lock");
   };
@@ -93,6 +95,7 @@ navMenu.onclick = (e) => {
   e.stopImmediatePropagation();
   burger.classList.remove("active");
   navMenu.classList.remove("active");
+  headerWrapper.classList.remove("active");
   setTimeout(() => {
     lockPadding.forEach((item) => (item.style.paddingRight = 0));
     body.classList.remove("lock");
@@ -135,17 +138,17 @@ const swiperProjects = new Swiper(".swiper_projects", {
       spaceBetween: 2,
       allowTouchMove: true,
     },
-    750: {
+    850: {
       slidesPerView: 2,
       spaceBetween: 15,
       allowTouchMove: true,
     },
-    1000: {
+    1100: {
       slidesPerView: 3,
       spaceBetween: 15,
       allowTouchMove: false,
     },
-    1300: {
+    1500: {
       slidesPerView: 4,
       spaceBetween: 20,
       allowTouchMove: false,

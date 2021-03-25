@@ -1,15 +1,30 @@
 :root {
   --color-darkgrey: #404040;
   --color-grey: #232323;
-  --color-header: #A09FA5;
+  --color-header: #000000ec;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1530px) {
+  .section_team {
+    height: 750px;
+  }
+  .team_text {
+    padding-top: 70px;
+    padding-left: 70px;
+  }
+}
+
+@media screen and (max-width: 1420px) {
+  h2.title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  h3.title {
+    font-size: 22px;
+    line-height: 30px;
+  }
   .benefit_card {
     text-align: center;
-  }
-  .benefit_sibtitle_three {
-    /* max-width: 300px; */
   }
   .team_text {
     padding-left: 100px;
@@ -33,20 +48,12 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   .intro_wrapper {
     margin-left: 5%;
   }
   .swiper-pagination {
-    bottom: 15px;
-  }
-  h2.title {
-    font-size: 40px;
-    line-height: 48px;
-  }
-  h3.title {
-    font-size: 22px;
-    line-height: 30px;
+    bottom: 30px;
   }
   .slogan {
     max-width: 900px;
@@ -71,18 +78,9 @@
     padding-top: 40px;
     padding-left: 60px;
   }
-  .project_arrows {
-    right: 5px;
-  }
 }
 
-@media screen and (max-width: 1150px) {
-  .room_subtitle {
-    max-width: 32%;
-  }
-}
-
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1270px) {
   .benefits_wrapper {
     flex-direction: column;
     align-items: center;
@@ -106,9 +104,43 @@
   .benefit_title {
     margin-top: 10px;
   }
+  .room_subtitle {
+    max-width: 32%;
+  }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+  .content {
+    padding: 0 70px;
+  }
+  .header .content {
+    padding: 0 70px;
+  }
+  .project_arrows {
+    right: 70px;
+  }.team_text {
+    padding-right: 70px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header_wrapper {
+    height: 90px;
+  }
+  .intro_wrapper {
+    margin-left: 0;
+    padding-bottom: 65px;
+    position: static;
+  }
+  .intro_button {
+    margin: 0 auto;
+  }
+  .intro_title {
+    text-align: center;
+    font-size: 54px;
+    width: 98%;
+    margin: 0 auto 57px;
+  }
   .project_card_img {
     height: 280px;
   }
@@ -149,29 +181,29 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
+  .team_text {
+    padding-top: 0;
+  }
+  .content {
+    padding: 0 50px;
+  }
+  .header .content {
+    padding: 0 50px;
+  }
+  .project_arrows {
+    right: 50px;
+  }
+  .team_text {
+    padding-right: 50px;
+  }
   h2.title {
     font-size: 36px;
-    line-height: 44px;
+    line-height: 42px;
   }
-  .header_wrapper {
-    height: 90px;
-  }
-  .swiper_intro {
-    height: 750px;
-  }
-  .intro_wrapper {
-    margin-left: 0;
-    padding-bottom: 65px;
-  }
-  .intro_title {
-    text-align: center;
-    font-size: 54px;
-    width: 98%;
-  }
-  .intro_button {
-    margin: 0 auto;
-  }
+}
+
+@media screen and (max-width: 1000px) {
   .email_title {
     max-width: 630px;
   }
@@ -180,7 +212,7 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   .benefits_wrapper {
     margin-bottom: 90px;
   }
@@ -206,9 +238,10 @@
   }
   .room_photo {
     position: static;
-    width: calc(100% - 161px);
     margin-left: auto;
-    height: 800px;
+    height: 950px;
+    margin-left: 110px;
+    width: calc(100% - 57px);
   }
   .room_items {
     transform: translate(-50%, 90px);
@@ -240,8 +273,9 @@
     flex-direction: column;
   }
   .team_photo {
-    width: 100%;
     height: 500px;
+    width: calc(100% + 100px);
+    margin-left: -50px;
     margin-bottom: 120px;
   }
   .team_text {
@@ -266,17 +300,16 @@
     padding: 20px 20px;
     max-width: 77%;
   }
+  .feedback_wrapper {
+    max-width: 100%;
+    padding: 0 50px;
+  }
 }
 
-@media screen and (max-width: 800px) {
-  .header .content {
-    padding: 0 10px;
-  }
-  .content {
-    padding: 0 10px;
-  }
-  .feedback_wrapper {
-    padding: 0 10px;
+@media screen and (max-width: 900px) {
+  .swiper_intro {
+    min-height: 800px;
+    height: 100vh;
   }
   .slogan {
     max-width: 85%;
@@ -308,31 +341,6 @@
     max-width: 450px;
     margin-bottom: 40px;
   }
-}
-
-@media screen and (max-width: 750px) {
-  .guest_photo {
-    margin: 0;
-  }
-  .section_feedback {
-    padding-top: 73px;
-    padding-bottom: 120px;
-  }
-  .section_projects {
-    margin-bottom: 140px;
-  }
-  .project_card_img {
-    height: 450px;
-  }
-  .project_card_subtitle {
-    width: 85%;
-  }
-  .project_arrows {
-    right: 0px;
-  }
-}
-
-@media screen and (max-width: 700px) {
   .header_wrapper {
     height: 80px;
   }
@@ -345,27 +353,18 @@
     flex-direction: column;
     position: fixed;
     top: 0;
-    left: -100%;
+    right: -100%;
     width: 100%;
     height: 100%;
-    background-color: rgba(31, 31, 31, 0.98);
-    padding: 90px 10px 0px;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin-top: 80px;
+    padding: 10px 50px 0px;
     z-index: 20;
     overflow: auto;
-    transition: left 0.4s ease-in;
+    transition: right 0.4s ease-in;
   }
   .nav_menu.active {
-    left: 0;
-  }
-  .header_wrapper::after {
-    position: fixed;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    background-color: var(--color-header);
-    z-index: 99;
+    right: 0;
   }
   .header_active .header_wrapper {
     height: 80px;
@@ -374,7 +373,22 @@
   .header_nav_link:not(:first-child) {
     margin-left: 0;
   }
+  .header_wrapper::after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 99;
+    background-color: transparent;
+    transition: background-color 0.4s ease-in;
+  }
+  .header_wrapper.active::after {
+    background-color: var(--color-header);
+  }
   .header_nav_link {
+    color: #000;
     width: fit-content;
     font-size: 36px;
     letter-spacing: 2px;
@@ -415,10 +429,28 @@
   .nav_burger.active .burger_line_three {
     transform: rotate(45deg);
   }
-
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 850px) {
+  .guest_photo {
+    margin: 0;
+  }
+  .section_feedback {
+    padding-top: 73px;
+    padding-bottom: 120px;
+  }
+  .section_projects {
+    margin-bottom: 140px;
+  }
+  .project_card_img {
+    height: 450px;
+  }
+  .project_card_subtitle {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 760px) {
   .intro_title {
     font-size: 42px;
     line-height: 50px;
@@ -453,7 +485,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .intro_wrapper {
     padding-bottom: 155px;
   }
@@ -467,8 +499,11 @@
     width: 30px;
   }
   .room_photo {
-    width: 100%;
-    height: 700px;
+    position: static;
+    margin-left: auto;
+    height: 950px;
+    margin-left: -50px;
+    width: calc(100% - -100px);
   }
   .room_item:nth-child(n+3) {
     display: none;
@@ -497,7 +532,33 @@
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 660px) {
+  .team_text {
+    padding-top: 0;
+  }
+  .content {
+    padding: 0 25px;
+  }
+  .header .content {
+    padding: 0 25px;
+  }
+  .project_arrows {
+    right: 25px;
+  }
+  .nav_menu {
+    padding-left: 25px;
+  }
+  .feedback_wrapper {
+    padding: 0 25px;
+  }
+  .room_photo {
+    margin-left: -25px;
+    width: calc(100% - -50px);
+  }
+  .team_photo {
+    width: calc(100% + 50px);
+    margin-left: -25px;
+  }
   h2.title {
     font-size: 32px;
     line-height: 38px;
@@ -510,7 +571,7 @@
   }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 620px) {
   .benefit_card {
     flex-direction: column;
     text-align: center;
@@ -520,16 +581,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .content {
-    padding: 0 5px;
-  }
-  .section_room .content {
-    padding: 0;
-  }
-  .section_team .content {
-    padding: 0;
-  }
+@media screen and (max-width: 600px) {
   .intro_title {
     font-size: 32px;
     line-height: 44px;
@@ -572,12 +624,13 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
   h3.title {
     font-size: 24px;
   }
   .subtitle {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 24px;
   }
   .swiper_intro {
     height: 700px;
@@ -600,7 +653,7 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .slogan {
     max-width: 98%;
     font-size: 22px;
@@ -638,7 +691,7 @@
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 480px) {
   .form_button_email {
     min-width: 120px;
     width: 120px;
@@ -646,11 +699,15 @@
   .social_link:nth-child(3) {
     display: none;
   }
+  .swiper_intro {
+    min-height: 650px;
+    height: 100vh;
+  }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 450px) {
   .project_card_img {
-    height: 220px;
+    height: 250px;
   }
   .browser_content {
     gap: 7px;
@@ -687,9 +744,38 @@
   .email_title {
     margin-bottom: 35px;
   }
+  .project_arrows {
+    top: -5px;
+  }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 430px) {
+  .team_text {
+    padding-top: 0;
+  }
+  .content {
+    padding: 0 7px;
+  }
+  .header .content {
+    padding: 0 7px;
+  }
+  .project_arrows {
+    right: 7px;
+  }
+  .nav_menu {
+    padding-left: 7px;
+  }
+  .feedback_wrapper {
+    padding: 0 7px;
+  }
+  .room_photo {
+    margin-left: -7px;
+    width: calc(100% - -15px);
+  }
+  .team_photo {
+    width: calc(100% + 15px);
+    margin-left: -7px;
+  }
   .intro_title {
     font-size: 30px;
     line-height: 42px;
@@ -714,3 +800,18 @@
   }
 }
 
+@media screen and (max-width: 350px) {
+  .slogan {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  h2.title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .subtitle {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
