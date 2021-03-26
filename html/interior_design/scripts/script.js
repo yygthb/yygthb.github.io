@@ -82,6 +82,7 @@ buttonSubmit.onclick = (e) => {
 const burger = document.querySelector(".nav_burger");
 const navMenu = document.querySelector(".nav_menu");
 const headerWrapper = document.querySelector(".header_wrapper");
+const headerNav = document.querySelector(".header_nav");
 if (burger) {
   burger.onclick = (e) => {
     burger.classList.toggle("active");
@@ -89,6 +90,13 @@ if (burger) {
     headerWrapper.classList.toggle("active");
     lockPadding.forEach((item) => (item.style.paddingRight = 0));
     body.classList.toggle("lock");
+    if (body.classList.contains("lock")) {
+      wrapper.style.marginRight = lockPaddingValue;
+      headerNav.style.marginRight = lockPaddingValue;
+    } else {
+      wrapper.style.marginRight = 0;
+      headerNav.style.marginRight = 0;
+    }
   };
 }
 navMenu.onclick = (e) => {
@@ -96,10 +104,10 @@ navMenu.onclick = (e) => {
   burger.classList.remove("active");
   navMenu.classList.remove("active");
   headerWrapper.classList.remove("active");
+  wrapper.style.marginRight = 0;
   setTimeout(() => {
     lockPadding.forEach((item) => (item.style.paddingRight = 0));
     body.classList.remove("lock");
-    wrapper.style.marginRight = 0;
   }, 400);
 };
 
