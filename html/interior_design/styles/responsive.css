@@ -689,6 +689,13 @@
   .project_card_subtitle {
     width: 95%;
   }
+  
+  .scroll-to-top {
+    width: 45px;
+    height: 45px;
+    right: 10px;
+    bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -700,8 +707,11 @@
     display: none;
   }
   .swiper_intro {
-    min-height: 650px;
+    min-height: 500px;
     height: 100vh;
+  }
+  .intro_wrapper {
+    padding-bottom: 90px;
   }
 }
 

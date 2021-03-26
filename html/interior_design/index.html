@@ -24,12 +24,12 @@
 </head>
 <body>
 
-  <div class="wrapper">
+  <div class="wrapper" id="home">
 
     <header class="header lock-padding">
       <div class="content">
         <div class="header_wrapper">
-          <a href="#" class="header_logo">
+          <a href="#home" class="header_logo">
             <img src="./media/logo_light.png" alt="" class="header_logo_img">
           </a>
           <div class="header_nav">
@@ -39,7 +39,7 @@
               <span class="burger_line burger_line_three"></span>
             </div>
             <div class="nav_menu">
-              <a href="#" class="header_nav_link">Услуги</a>
+              <a href="./service.html" class="header_nav_link">Услуги</a>
               <a href="#" class="header_nav_link">Портфолио</a>
               <a href="#" class="header_nav_link">Цены</a>
               <a href="#" class="header_nav_link">О нас</a>
@@ -344,6 +344,7 @@
       <div class="modal_body modal-close">
         <div class="modal_content">
           <div class="modal_button-close modal-close">+</div>
+          <div class="modal_header"></div>
           <form class="modal_form">
             <input type="text" placeholder="Имя" class="form_input modal_input-name">
             <input type="text" placeholder="Телефон" class="form_input modal_input-phone">
@@ -353,6 +354,19 @@
         </div>
       </div>
     </div>
+
+    <a href="#home" class="scroll-to-top" title="go to top">
+      <svg class="scroll-to-top_svg" viewBox="-2 -2 52 52" >
+        <path 
+          class="scroll-to-top_svg-path"
+          d="
+            M24,0
+            a24,24 0 0,1 0,48
+            a24,24 0 0,1 0,-48
+          "
+        />
+      </svg>
+    </a>
 
   </div>
   

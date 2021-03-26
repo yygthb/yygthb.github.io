@@ -159,3 +159,58 @@ const swiperProjects = new Swiper(".swiper_projects", {
 // email-form
 const buttonEmail = document.querySelector(".form_button_email");
 buttonEmail.onclick = (e) => e.preventDefault();
+
+// scroll-to-top
+const minScroll = 50;
+const scrollToTop = document.querySelector(".scroll-to-top");
+const scrollToTopSvgPath = document.querySelector(".scroll-to-top_svg-path");
+const pathLength = scrollToTopSvgPath.getTotalLength();
+
+scrollToTopSvgPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+scrollToTopSvgPath.style.transition = "stroke-dashoffset 20ms";
+
+const getScrollLength = () =>
+  window.pageYOffset || document.documentElement.scrollTop;
+
+const updateDashOffset = () => {
+  const height = document.documentElement.scrollHeight - window.innerHeight;
+  const dashOffset = pathLength - (getScrollLength() * pathLength) / height;
+
+  scrollToTopSvgPath.style.strokeDashoffset = dashOffset;
+};
+
+window.addEventListener("scroll", (e) => {
+  updateDashOffset();
+
+  if (getScrollLength() > minScroll) {
+    scrollToTop.classList.add("active");
+  } else {
+    scrollToTop.classList.remove("active");
+  }
+});
+
+// slow scroll
+const navLinks = document.querySelectorAll('a[href*="#"]');
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const blockId = navLink.getAttribute("href").substr(1);
+
+    let scrollToLink = "";
+    blockId === "" ? (scrollToLink = "home") : (scrollToLink = blockId);
+
+    const header = document.querySelector(".header");
+
+    // const yOffSet = -71
+    const yOffSet = -header.offsetHeight - 5;
+    const element = document.querySelector(`#${scrollToLink}`);
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffSet;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  });
+});

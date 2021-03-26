@@ -691,11 +691,65 @@ a {
   width: 340px;
   margin-bottom: 40px;
   padding: 19px 20px;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
   background: rgba(255, 255, 255, 0.95);
   letter-spacing: 1px;
 }
 .modal_button_submit {
   width: 340px;
+  border-radius: 4px;
 }
 /* /Modal */
+
+/* Scroll to top */
+body.lock .scroll-to-top {
+  display: none;
+}
+.scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+  transform: translateY(25px);
+}
+.scroll-to-top.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.scroll-to-top::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  content: '⇈';
+}
+.scroll-to-top_svg-path {
+  fill: none;
+  stroke-width: 4px;
+  transition: .5s;
+}
+.scroll-to-top {
+  color: #bbb;
+  box-shadow: inset 0 0 0 4px #bbb;
+}
+.scroll-to-top:hover::after {
+  color: #777;
+}
+.scroll-to-top_svg-path {
+  stroke: #777;
+}
+/* /Scroll to top */
