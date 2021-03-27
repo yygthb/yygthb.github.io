@@ -696,6 +696,9 @@
     right: 10px;
     bottom: 10px;
   }
+  .scroll-to-top::after {
+    transform: translate(0, -2px);
+  }
 }
 
 @media screen and (max-width: 480px) {
