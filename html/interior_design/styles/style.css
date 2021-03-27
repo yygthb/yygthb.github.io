@@ -696,6 +696,12 @@ a {
   background: rgba(255, 255, 255, 0.95);
   letter-spacing: 1px;
 }
+.error::placeholder {
+  color: red;
+}
+.error {
+  color: red;
+}
 .modal_button_submit {
   width: 340px;
   border-radius: 4px;

@@ -9,6 +9,13 @@ const modalClose = document.querySelectorAll(".modal-close");
 const buttonModalSend = document.querySelector(".modal_button-send");
 const header = document.querySelector(".header");
 
+const buttonSubmitModal = document.querySelector(".modal_button_submit");
+const modalName = document.querySelector(".modal_input-name");
+const modalPhone = document.querySelector(".modal_input-phone");
+const modalEmail = document.querySelector(".modal_inupt-email");
+const buttonFormEmail = document.querySelector(".form_button_email");
+const formEmail = document.querySelector(".email_form_input");
+
 const timeout = 800;
 
 // hide modal until document load
@@ -51,7 +58,19 @@ const closeModalHandler = () => {
     lockPadding.forEach((item) => (item.style.paddingRight = 0));
     body.classList.remove("lock");
     wrapper.style.marginRight = 0;
+    modalName.value = "";
+    modalName.placeholder = "Имя";
+    modalPhone.value = "";
+    modalPhone.placeholder = "Телефон";
+    modalEmail.value = "";
+    modalEmail.placeholder = "E-mail";
   }, timeout);
+  modalName.value = "";
+  modalPhone.value = "";
+  modalEmail.value = "";
+  modalName.classList.remove("error");
+  modalPhone.classList.remove("error");
+  modalEmail.classList.remove("error");
 };
 const escListener = (e) => {
   if (e.key === "Escape") {
@@ -73,9 +92,83 @@ modalContent.onclick = (e) => {
 };
 
 // modal form
-const buttonSubmit = document.querySelector(".modal_button_submit");
-buttonSubmit.onclick = (e) => {
+function validationEmail(email) {
+  let re = /\S+@\S+\.\S+/;
+  return re.test(email);
+}
+modalName.onfocus = () => {
+  if (modalName.classList.contains("error")) {
+    modalName.classList.remove("error");
+    modalName.value = "";
+  }
+};
+modalPhone.onfocus = () => {
+  if (modalPhone.classList.contains("error")) {
+    modalPhone.classList.remove("error");
+    modalPhone.value = "";
+  }
+};
+modalEmail.onfocus = () => {
+  if (modalEmail.classList.contains("error")) {
+    modalEmail.classList.remove("error");
+    modalEmail.value = "";
+  }
+};
+buttonSubmitModal.onclick = (e) => {
   e.preventDefault();
+
+  if (
+    validationEmail(modalEmail.value) &&
+    modalName.value.trim() !== "" &&
+    modalPhone.value.trim() !== ""
+  ) {
+    const data = {
+      name: modalName.value,
+      phone: modalPhone.value,
+      email: modalEmail.value,
+    };
+    console.log("submit data: ", data);
+    closeModalHandler();
+  } else {
+    if (modalName.value.trim() === "") {
+      modalName.classList.add("error");
+      modalName.placeholder = "Введите имя";
+    }
+    if (modalPhone.value.trim() === "") {
+      modalPhone.classList.add("error");
+      modalPhone.placeholder = "Введите телефон";
+    }
+    if (modalEmail.value.trim() === "") {
+      modalEmail.classList.add("error");
+      modalEmail.placeholder = "Введите email";
+    }
+    if (!validationEmail(modalEmail.value)) {
+      modalEmail.classList.add("error");
+      modalEmail.value = "Введите корректный email";
+    }
+  }
+};
+
+// email
+formEmail.onfocus = () => {
+  if (formEmail.classList.contains("error")) {
+    formEmail.classList.remove("error");
+    formEmail.value = "";
+  }
+};
+buttonFormEmail.onclick = (e) => {
+  e.preventDefault();
+  if (!validationEmail(formEmail.value)) {
+    formEmail.classList.add("error");
+    formEmail.value = "Введите корректный email";
+  } else {
+    const data = {
+      email: formEmail.value,
+    };
+    console.log("submit data: ", data);
+    formEmail.classList.remove("error");
+    formEmail.value = "";
+  }
 };
 
 // nav burger
@@ -163,10 +256,6 @@ const swiperProjects = new Swiper(".swiper_projects", {
     },
   },
 });
-
-// email-form
-const buttonEmail = document.querySelector(".form_button_email");
-buttonEmail.onclick = (e) => e.preventDefault();
 
 // scroll-to-top
 const minScroll = 50;
